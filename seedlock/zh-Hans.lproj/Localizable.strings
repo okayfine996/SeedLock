@@ -1,0 +1,594 @@
+/*
+  Localizable.strings (Simplified Chinese)
+  seedlock
+*/
+
+/* Common */
+"common.back" = "返回";
+"common.done" = "完成";
+"common.cancel" = "取消";
+"common.save" = "保存";
+"common.delete" = "删除";
+"common.edit" = "编辑";
+"common.ok" = "确定";
+"common.error" = "错误";
+"common.success" = "成功";
+"common.settings" = "设置";
+"common.retry" = "重试";
+
+/* Language */
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.settings_title" = "语言";
+"language.select_language" = "选择语言";
+
+/* Home */
+"home.title" = "我的助记词";
+"home.search.placeholder" = "搜索助记词...";
+"home.filter.all" = "全部";
+"home.filter.starred" = "星标";
+"home.filter.archived" = "已归档";
+"home.empty.title" = "还没有助记词";
+"home.empty.message" = "点击 + 按钮添加您的第一个助记词短语。";
+"home.error.title" = "出错了";
+"home.error.message" = "无法加载您的助记词。请检查网络连接后重试。";
+"home.add_mnemonic" = "添加助记词";
+"home.create_new" = "创建新的";
+"home.import_existing" = "导入现有";
+"home.delete_confirmation.title" = "删除助记词？";
+"home.delete_confirmation.message" = "确定要删除 \"%@\" 吗？此操作无法撤销，将从所有设备中删除该助记词。";
+"home.swipe.delete" = "删除";
+"home.swipe.archive" = "归档";
+"home.swipe.unarchive" = "取消归档";
+"home.swipe.star" = "星标";
+"home.swipe.unstar" = "取消星标";
+
+/* Home Banners */
+"banner.icloud_disabled.title" = "未连接 iCloud";
+"banner.icloud_disabled.message" = "登录 iCloud 以启用同步和备份功能。";
+"banner.icloud_disabled.action" = "设置";
+"banner.no_backup.title" = "未配置备份";
+"banner.no_backup.message" = "您的助记词未备份。立即设置备份以保护您的数据。";
+"banner.no_backup.action" = "备份";
+"banner.backup_reminder.title" = "备份提醒";
+"banner.backup_reminder.message" = "距离上次备份已经 %d 天了。建议立即备份。";
+"banner.backup_reminder.action" = "备份";
+"banner.sync_disabled.title" = "iCloud 同步已禁用";
+"banner.sync_disabled.message" = "启用 iCloud 同步以在设备之间保持助记词同步。";
+"banner.sync_disabled.action" = "启用";
+"banner.first_mnemonic.title" = "创建了第一个助记词！";
+"banner.first_mnemonic.message" = "很好的开始！记得定期备份您的助记词。";
+"banner.first_mnemonic.action" = "知道了";
+"banner.many_mnemonics.title" = "整理您的助记词";
+"banner.many_mnemonics.message" = "您有 %d 个助记词。试试给重要的添加星标以便快速访问。";
+"banner.many_mnemonics.action" = "知道了";
+
+/* Create Mnemonic */
+"create.title" = "创建助记词";
+"create.name.label" = "名称";
+"create.name.placeholder" = "例如：我的比特币钱包";
+"create.name.required" = "名称为必填项";
+"create.length.label" = "助记词长度";
+"create.generate_button" = "生成";
+"create.preview.title" = "助记词预览";
+"create.preview.empty" = "生成的助记词将显示在这里。";
+"create.tags.label" = "标签";
+"create.tags.select" = "选择标签";
+"create.note.label" = "备注";
+"create.note.placeholder" = "添加可选备注...";
+"create.save_button" = "保存助记词";
+"create.save_confirmation.title" = "保存助记词？";
+"create.save_confirmation.message" = "助记词将使用 AES-256-GCM 加密并安全存储在 iOS 钥匙串中。请确保您已进行备份。";
+"create.success.title" = "助记词已保存";
+"create.success.message" = "您的新助记词已加密并安全存储。";
+
+/* Import Mnemonic */
+"import.title" = "导入助记词";
+"import.name.label" = "名称";
+"import.name.placeholder" = "输入钱包名称";
+"import.mnemonic.label" = "助记词";
+"import.paste_button" = "粘贴";
+"import.mnemonic.placeholder" = "在此输入或粘贴您的 12、18 或 24 个单词的 BIP-39 助记词短语...";
+"import.error.invalid_count" = "单词数量无效。必须是 12、18 或 24 个。";
+"import.error.invalid_phrase" = "无效的 BIP-39 助记词短语。请验证后重试。";
+"import.validation.valid" = "有效的 BIP-39 助记词短语";
+"import.suggestions.title" = "建议单词";
+"import.tags.label" = "标签";
+"import.tags.select" = "选择标签";
+"import.note.label" = "备注（可选）";
+"import.note.placeholder" = "添加备注...";
+"import.save_button" = "保存";
+"import.success.title" = "助记词已导入";
+"import.success.message" = "您的助记词已加密并安全存储。";
+
+/* Detail View */
+"detail.created" = "创建时间：";
+"detail.last_updated" = "最后更新：";
+"detail.mnemonic_phrase" = "助记词短语";
+"detail.loading" = "正在通过钥匙串进行认证...";
+"detail.auto_lock" = "%@ 后自动锁定";
+"detail.copy_button" = "复制";
+"detail.copy_success" = "已复制！为了安全将在 30 秒后清除剪贴板";
+"detail.screenshot_warning" = "为了您的安全，请避免截屏或录屏。请将助记词存储在安全的物理位置。";
+"detail.delete_button" = "删除助记词";
+"detail.delete_confirmation.title" = "删除助记词？";
+"detail.delete_confirmation.message" = "此操作无法撤销。加密的助记词将从所有同步设备中永久删除。";
+"detail.error.title" = "解密错误";
+"detail.error.message" = "解密失败。请进行身份验证后重试。";
+
+/* Settings */
+"settings.title" = "设置";
+"settings.section.data_sync" = "数据与同步";
+"settings.section.security" = "安全";
+"settings.section.about" = "关于";
+"settings.section.appearance" = "外观";
+"settings.icloud_account" = "iCloud 账户";
+"settings.icloud_checking" = "检查中...";
+"settings.icloud_connected" = "已连接";
+"settings.icloud_not_signed_in" = "未登录";
+"settings.icloud_sync" = "iCloud 同步";
+"settings.icloud_sync_description" = "在所有设备间同步您的加密数据和密钥";
+"settings.icloud_sync_active" = "同步已启用";
+"settings.icloud_sync_disabled" = "同步已禁用";
+"settings.backup_restore" = "备份与恢复";
+"settings.app_lock" = "应用锁定";
+"settings.require_biometrics" = "查看时需要生物识别";
+"settings.clipboard_timeout" = "剪贴板超时";
+"settings.screenshot_warning" = "截屏警告";
+"settings.security_whitepaper" = "安全白皮书";
+"settings.about_privacy" = "关于与隐私";
+"settings.diagnostics" = "诊断";
+"settings.app_version" = "应用版本";
+"settings.clipboard_timeout_message" = "选择复制的文本在剪贴板中保留的时间";
+"settings.clipboard.30_seconds" = "30 秒";
+"settings.clipboard.1_minute" = "1 分钟";
+"settings.clipboard.2_minutes" = "2 分钟";
+"settings.clipboard.5_minutes" = "5 分钟";
+"settings.restart_required_title" = "需要重启";
+"settings.restart_required_message" = "请关闭并重新打开应用以启用 iCloud 同步。下次启动时将请求网络权限。";
+
+/* Backup */
+"backup.title" = "备份与恢复";
+"backup.section.auto" = "自动备份";
+"backup.section.icloud_backups" = "ICLOUD 备份";
+"backup.section.restore" = "恢复";
+"backup.section.about" = "关于备份";
+"backup.auto_backup" = "自动备份";
+"backup.auto_backup_hint" = "启用自动备份以设置备份密码。";
+"backup.backup_interval" = "备份间隔";
+"backup.interval.daily" = "每天";
+"backup.interval.weekly" = "每周";
+"backup.interval.monthly" = "每月";
+"backup.last_backup" = "最后备份";
+"backup.last_backup.never" = "从未";
+"backup.backup_now" = "立即备份";
+"backup.view_all" = "查看所有备份 (%d)";
+"backup.restore_from_file" = "从文件恢复";
+"backup.set_password.title" = "设置备份密码";
+"backup.set_password.message" = "选择一个强密码使用 AES-256-GCM 加密您的备份。这将启用自动备份并创建您的第一个加密备份。";
+"backup.set_password.button" = "启用自动备份";
+"backup.restore_password.title" = "恢复备份";
+"backup.restore_password.message" = "输入您用于加密此备份文件的密码。";
+"backup.restore_password.button" = "恢复备份";
+"backup.info.encrypted.title" = "AES-256 加密";
+"backup.info.encrypted.description" = "所有备份使用军事级 AES-256-GCM 加密算法和您的密码保护";
+"backup.info.icloud.title" = "iCloud 云盘存储";
+"backup.info.icloud.description" = "加密备份安全存储在您的私人 iCloud 云盘中";
+"backup.info.sync.title" = "同步与备份";
+"backup.info.sync.description" = "同步保持实时数据同步，备份创建加密恢复点。";
+"backup.info.important.title" = "重要";
+"backup.info.important.description" = "您的备份密码无法恢复，请安全存储。";
+"backup.password.placeholder" = "备份密码";
+"backup.password.confirm" = "确认密码";
+"backup.mnemonics_count" = "%d 个助记词";
+"backup.menu.restore" = "恢复";
+"backup.menu.delete" = "删除";
+"backup.success.set_password" = "备份密码设置成功！已启用自动加密备份。";
+"backup.success.created" = "加密备份完成并已保存到 iCloud 云盘。";
+"backup.success.restored" = "成功恢复了 %d 个加密助记词。";
+
+/* Onboarding */
+"onboarding.welcome.title" = "保护您的Crypto\n密钥";
+"onboarding.welcome.subtitle" = "专业级安全保护\n您的加密货币助记词短语。";
+"onboarding.security.title" = "您的安全，您做主";
+"onboarding.security.subtitle" = "SeedLock 采用企业级安全技术和零知识架构保护您的加密密钥。";
+"onboarding.security.offline.title" = "100% 离线存储";
+"onboarding.security.offline.description" = "您的密钥永不离开设备。所有加密和存储都在本地进行，确保完全的气隙安全。";
+"onboarding.security.encryption.title" = "军事级加密技术";
+"onboarding.security.encryption.description" = "AES-256-GCM 加密算法保护每个助记词短语，采用政府机构使用的同等标准。";
+"onboarding.security.biometric.title" = "生物识别保护";
+"onboarding.security.biometric.description" = "需要面容 ID 或触控 ID 认证才能查看敏感数据，防止未经授权的访问。";
+"onboarding.security.no_tracking.title" = "零数据收集";
+"onboarding.security.no_tracking.description" = "我们从不收集、记录或传输任何用户数据。完全隐私，无任何分析或追踪。";
+"onboarding.cloud.title" = "可选的 iCloud 同步";
+"onboarding.cloud.subtitle" = "通过端到端加密在您所有 Apple 设备上保持助记词同步。";
+"onboarding.cloud.sync.title" = "无缝同步";
+"onboarding.cloud.sync.description" = "Apple CloudKit 自动在所有设备上安全同步您的端到端加密数据。";
+"onboarding.cloud.keychain.title" = "iCloud 钥匙串";
+"onboarding.cloud.keychain.description" = "加密密钥通过 Apple 的安全 iCloud 钥匙串同步，具有硬件级保护。";
+"onboarding.cloud.backup.title" = "加密备份";
+"onboarding.cloud.backup.description" = "创建受密码保护的 AES-256 加密备份文件，存储在您的私人 iCloud 云盘中。";
+"onboarding.cloud.optional.title" = "完全可选";
+"onboarding.cloud.optional.description" = "所有云功能完全可选。如果您希望完全隔离，可以 100% 离线使用 SeedLock。";
+"onboarding.cloud.get_started" = "开始使用";
+"onboarding.cloud.learn_more" = "了解更多安全信息";
+
+/* Security */
+"security.biometric_prompt" = "解锁助记词短语";
+"security.app_lock_prompt" = "解锁 SeedLock";
+
+/* Alerts */
+"alert.icloud_not_available" = "请先登录 iCloud。前往设置 → [您的名字] → iCloud。";
+"alert.icloud_sync_enabled" = "已启用 iCloud 同步。您的加密数据和密钥将在所有设备间同步。";
+"alert.icloud_sync_disabled" = "已禁用 iCloud 同步。数据和密钥将仅保留在本地。";
+"alert.biometric_not_available" = "此设备不支持生物识别认证。";
+"alert.sync_status" = "同步状态";
+
+/* Diagnostics */
+"diagnostics.title" = "诊断";
+"diagnostics.errors_count" = "错误：%d";
+"diagnostics.export_button" = "导出";
+"diagnostics.info.os" = "操作系统";
+"diagnostics.info.device" = "设备";
+"diagnostics.info.app_version" = "应用版本";
+
+/* Backup */
+"backup.title" = "备份与恢复";
+"backup.section.auto" = "自动备份";
+"backup.section.icloud_backups" = "ICLOUD 备份";
+"backup.section.restore" = "恢复";
+"backup.section.about" = "关于备份";
+"backup.auto_backup" = "自动备份";
+"backup.auto_backup_hint" = "启用自动备份以设置备份密码。";
+"backup.backup_interval" = "备份间隔";
+"backup.interval.daily" = "每天";
+"backup.interval.weekly" = "每周";
+"backup.interval.monthly" = "每月";
+"backup.last_backup" = "最后备份";
+"backup.last_backup.never" = "从未";
+"backup.backup_now" = "立即备份";
+"backup.view_all" = "查看所有备份 (%d)";
+"backup.restore_from_file" = "从文件恢复";
+"backup.set_password.title" = "设置备份密码";
+"backup.set_password.message" = "选择一个强密码来加密您的备份。这将启用自动备份并立即创建您的第一个备份。";
+"backup.set_password.button" = "启用自动备份";
+"backup.restore_password.title" = "恢复备份";
+"backup.restore_password.message" = "输入您创建此备份时使用的密码。";
+"backup.restore_password.button" = "恢复备份";
+"backup.info.encrypted.title" = "已加密";
+"backup.info.encrypted.description" = "所有备份都使用您的密码加密";
+"backup.info.icloud.title" = "iCloud 云盘";
+"backup.info.icloud.description" = "备份存储在您的 iCloud 云盘中";
+"backup.info.sync.title" = "同步与备份";
+"backup.info.sync.description" = "同步保持数据同步。备份创建恢复点。";
+"backup.info.important.title" = "重要";
+"backup.info.important.description" = "请记住您的备份密码。它无法恢复。";
+"backup.password.placeholder" = "备份密码";
+"backup.password.confirm" = "确认密码";
+"backup.mnemonics_count" = "%d 个助记词";
+"backup.menu.restore" = "恢复";
+"backup.menu.delete" = "删除";
+"backup.success.set_password" = "备份密码设置成功！已启用自动备份并创建了第一个备份。";
+"backup.success.created" = "备份完成并已保存到 iCloud 云盘。";
+"backup.success.restored" = "成功恢复了 %d 个助记词。";
+
+/* About */
+"about.title" = "关于与隐私";
+"about.zero_knowledge.title" = "零知识架构";
+"about.zero_knowledge.description" = "SeedLock 采用零知识架构设计，确保您的秘密短语和加密密钥完全私密。所有数据完全保留在您的设备上，确保您的加密资产完全私密并处于您的独家掌控之中。";
+"about.secure_storage.title" = "军事级加密技术";
+"about.secure_storage.description" = "您的助记词短语使用 AES-256-GCM 加密算法保护，这是银行和政府机构使用的同等标准。所有数据在存储到 iOS 钥匙串（苹果最安全的存储系统）之前都会在本地加密。可选的 iCloud 备份使用端到端加密，确保只有您能够解密您的信息。";
+"about.anonymous_logging.title" = "完全隐私保证";
+"about.anonymous_logging.description" = "SeedLock 100% 离线运行，永不通过互联网传输您的数据。我们不收集、记录、跟踪或分析任何用户数据，包括助记词短语、密码、生物识别数据、使用模式或个人信息。您的隐私是绝对的。";
+"about.legal_licenses" = "法律与许可";
+"about.terms_of_service" = "服务条款";
+"about.privacy_policy" = "隐私政策";
+"about.open_source_licenses" = "开源许可";
+"about.contact_feedback" = "联系与反馈";
+"about.contact_description" = "有疑问或建议吗？我们重视您的反馈，并根据用户意见持续改进 SeedLock。您的见解帮助我们为整个社区打造更好、更安全的应用。";
+"about.send_feedback" = "发送反馈";
+"about.mail_error.title" = "无法发送邮件";
+"about.mail_error.message" = "您的设备未配置邮件发送功能。请在 iOS 设置中添加邮件账户以发送反馈。";
+
+/* Time Formats */
+"time.seconds" = "%d 秒";
+"time.minute" = "1 分钟";
+"time.minutes" = "%d 分钟";
+
+/* Edit Mnemonic */
+"edit.title" = "编辑助记词";
+"edit.name.label" = "名称";
+"edit.name.placeholder" = "例如：我的比特币钱包";
+"edit.name.required" = "名称为必填项";
+"edit.mnemonic.label" = "助记词短语";
+"edit.mnemonic.encrypted" = "助记词已加密";
+"edit.mnemonic.unlock_hint" = "轻点解锁查看";
+"edit.copy_button" = "复制";
+"edit.lock_button" = "锁定";
+"edit.unlock_button" = "解锁";
+"edit.tags.label" = "标签";
+"edit.tags.placeholder" = "添加标签进行分类";
+"edit.note.label" = "备注";
+"edit.note.placeholder" = "添加可选备注...";
+"edit.note.counter" = "%d/200";
+"edit.save_button" = "保存";
+"edit.cancel_button" = "取消";
+"edit.copy_success" = "助记词短语已复制到剪贴板";
+
+/* Enable App Lock */
+"enable_app_lock.title" = "应用锁定";
+"enable_app_lock.description" = "启用应用锁定后，需要使用面容 ID 或触控 ID 身份验证才能打开 SeedLock，为您的助记词短语提供额外的安全保护层。";
+"enable_app_lock.button" = "启用应用锁定";
+"enable_app_lock.subtitle" = "需要生物识别认证才能解锁应用。";
+"enable_app_lock.cancel" = "稍后再说";
+
+/* Enable Biometrics */
+"enable_biometrics.title" = "查看时需要生物识别";
+"enable_biometrics.description" = "启用此功能后，每次查看助记词短语时都需要面容 ID 或触控 ID 认证，为您的敏感加密数据提供最大程度的安全保护。";
+"enable_biometrics.button" = "启用生物识别认证";
+"enable_biometrics.subtitle" = "查看助记词时需要生物识别认证。";
+"enable_biometrics.cancel" = "暂时跳过";
+
+/* Tag Picker */
+"tags.title" = "选择标签";
+"tags.search_placeholder" = "添加或搜索标签";
+"tags.selected_count" = "已选择 (%d/5)";
+"tags.create_new" = "创建「%@」";
+"tags.max_length_error" = "标签名称不能超过 16 个字符";
+"tags.max_count_error" = "最多允许 5 个标签";
+"tags.max_selected" = "已选择最多 5 个标签";
+
+/* All Backups */
+"all_backups.title" = "所有备份";
+"all_backups.mnemonics_count" = "%d 个助记词";
+
+/* Privacy Policy */
+"privacy.title" = "隐私政策";
+"privacy.last_updated" = "最后更新：2025年10月25日";
+"privacy.intro" = "您的隐私对我们至关重要。本政策解释了 SeedLock 如何通过行业领先的加密技术和零知识架构处理您的数据。";
+
+"privacy.section1.title" = "零知识架构";
+"privacy.section1.content" = "Seedlock 采用零知识架构设计，确保完全的隐私保护：\n\n• 您的助记词短语在本地加密\n• 您的数据始终保持私密\n• 只有您可以访问您的数据\n• 所有加密都在您的设备上进行";
+
+"privacy.section2.title" = "我们不收集的数据";
+"privacy.section2.content" = "Seedlock 不会收集、存储或传输：\n\n• 您的助记词短语\n• 您的密码或备份密码\n• 您的个人信息\n• 您的使用模式\n• 分析或追踪数据\n• 位置数据";
+
+"privacy.section3.title" = "本地数据存储";
+"privacy.section3.content" = "您的所有数据都本地存储在设备上：\n\n• 使用 AES-256-GCM 加密\n• 存储在 iOS 钥匙串中\n• 永不离开您的设备（除非您启用 iCloud）\n• 仅可通过设备认证访问";
+
+"privacy.section4.title" = "可选的 iCloud 同步";
+"privacy.section4.content" = "如果您选择启用 iCloud 同步：\n\n• 数据在同步前经过端到端加密\n• 通过 Apple 的 CloudKit 服务同步\n• Apple 的隐私政策适用于 iCloud 数据\n• 您可以随时禁用同步\n• 同步的数据保持加密状态";
+
+"privacy.section5.title" = "第三方服务";
+"privacy.section5.content" = "Seedlock 使用以下 Apple 服务：\n\n• iOS 钥匙串（用于安全本地存储）\n• CloudKit（可选，用于加密同步）\n• iCloud 云盘（可选，用于备份）\n\n这些服务受 Apple 隐私政策的约束。";
+
+"privacy.section6.title" = "您的权利";
+"privacy.section6.content" = "您对自己的数据拥有完全控制权：\n\n• 随时导出您的数据\n• 随时删除您的数据\n• 随时禁用 iCloud 同步\n• 无需账户\n• 无供应商锁定";
+
+"privacy.section7.title" = "隐私政策的变更";
+"privacy.section7.content" = "我们可能会不时更新本隐私政策。变更将在应用中反映，并更新最后更新日期。";
+
+/* Terms of Service */
+"terms.title" = "服务条款";
+"terms.last_updated" = "最后更新：2025年10月25日";
+"terms.intro" = "使用 SeedLock 之前，请仔细阅读这些服务条款。";
+"terms.warning.title" = "⚠️ 重要警告";
+"terms.warning.message" = "本应用使用 AES-256 加密技术保护您的加密货币助记词短语。然而，由于超出我们控制范围的情况——包括但不限于设备硬件故障、物理盗窃、安全漏洞、Apple iOS 系统漏洞、未经授权的访问、用户操作失误或不可抗力事件——您的助记词短语可能会丢失、被盗或泄露。此类损失可能导致资金的永久且不可逆转的损失。我们在任何情况下均不对任何损失承担责任。请务必保持助记词短语的安全离线备份。";
+"terms.agreement.title" = "您已同意这些条款";
+"terms.agreement.message" = "使用 SeedLock，即表示您确认已阅读并同意这些服务条款。";
+
+"terms.section1.title" = "接受条款";
+"terms.section1.content" = "通过下载、安装或使用 Seedlock（本应用），您同意受这些服务条款的约束。如果您不同意这些条款，请不要使用本应用。";
+
+"terms.section2.title" = "服务描述";
+"terms.section2.content" = "Seedlock 是一个安全的助记词短语管理应用，允许您：\n\n• 存储和管理加密货币助记词短语\n• 生成符合 BIP-39 标准的助记词短语\n• 在设备上本地加密数据\n• 可选择通过 iCloud 同步加密数据\n• 创建数据的安全备份\n\n本应用完全离线运行，不会将您的助记词短语传输到任何外部服务器。";
+
+"terms.section3.title" = "用户责任";
+"terms.section3.content" = "您需要对以下内容负全部责任：\n\n• 维护设备的安全性\n• 保护您的助记词短语\n• 创建和维护安全备份\n• 记住您的备份密码\n• 使用本应用进行的任何操作\n\n我们强烈建议在安全位置保留助记词短语的物理备份。";
+
+"terms.section4.title" = "⚠️ 重要风险警告";
+"terms.section4.content" = "重要提示：使用本应用前请仔细阅读本节内容。\n\n助记词短语丢失：\n• 如果您丢失助记词短语，可能会永久失去对加密货币钱包和资金的访问权限\n• 丢失的助记词短语无法恢复\n• 已删除的数据无法恢复\n• 任何支持团队都无法帮助您恢复丢失的数据\n\n盗窃或未经授权的访问：\n• 如果有人获得您的助记词短语访问权限，他们可以窃取您的加密货币资金\n• 助记词短语提供对相关钱包的完全控制权\n• 任何拥有您短语的人都可以在未经您许可的情况下转移所有资金\n• 此类转账不可逆转且无法撤销\n\n设备安全：\n• 您有责任保护您的设备安全\n• 截屏、录屏或旁观可能暴露您的短语\n• 设备上的恶意软件或间谍软件可能危及您的数据\n• 物理访问未锁定的设备可能导致盗窃\n\n备份安全：\n• 丢失的备份密码无法恢复\n• 损坏的备份可能无法恢复\n• 您必须安全存储备份文件\n• 备份文件落入错误之手可能导致盗窃\n\n不承担损失责任：\n我们不对任何财务损失负责，包括但不限于：\n• 因丢失助记词短语而损失的加密货币资金\n• 因短语泄露而被盗的加密货币资金\n• 因设备被盗或未经授权访问而造成的损失\n• 因忘记密码或加密密钥而造成的损失\n• 因备份文件损坏或丢失而造成的损失\n• 因用户错误或疏忽而造成的损失\n• 与使用本应用相关的任何其他损失\n\n使用本应用即表示您承认这些风险并同意承担所有后果。";
+
+"terms.section5.title" = "零知识架构";
+"terms.section5.content" = "Seedlock 基于零知识架构构建：\n\n• 您的助记词短语完全私密\n• 丢失或遗忘的数据无法恢复\n• 您的备份仅使用您的密码加密\n• 所有加密都在您的设备上本地进行\n\n您需要独自负责维护对数据的访问权限。丢失的密码或助记词短语无法被任何人恢复。";
+
+"terms.section6.title" = "数据存储和备份";
+"terms.section6.content" = "本地存储：\n• 所有数据使用 AES-256-GCM 加密算法加密\n• 加密密钥存储在 iOS 钥匙串中\n• 数据保留在您的设备上，除非您启用 iCloud 同步\n\n可选的 iCloud 同步：\n• 加密数据可能通过 CloudKit 同步\n• Apple 的 iCloud 条款和隐私政策适用\n• 数据在传输和静态时保持加密\n• 您可以随时禁用同步";
+
+"terms.section7.title" = "无保证声明";
+"terms.section7.content" = "本应用按原样提供，不提供任何形式的保证：\n\n• 不保证应用的可用性\n• 不对数据丢失负责\n• 无法保证完全的安全性\n• 应用可能包含错误或漏洞\n\n使用本应用的风险由您自行承担。我们建议对关键数据保持多个备份。";
+
+"terms.section8.title" = "责任限制";
+"terms.section8.content" = "在法律允许的最大范围内，我们不对任何损失或损害负责，包括但不限于：\n\n财务损失：\n• 因丢失助记词短语而损失的加密货币资金\n• 加密货币资金被盗\n• 市场损失或交易决策\n\n数据损失：\n• 丢失、损坏或无法访问的数据\n• 备份或同步操作失败\n• 设备故障或损坏\n\n间接损害：\n• 业务或利润损失\n• 精神痛苦\n• 后果性或惩罚性损害";
+
+"terms.section9.title" = "更新和变更";
+"terms.section9.content" = "我们保留随时修改这些服务条款的权利。变更将在应用中发布后立即生效。变更后继续使用本应用即表示接受更新的条款。";
+
+"terms.section10.title" = "适用法律";
+"terms.section10.content" = "这些服务条款受您所在司法管辖区的法律管辖。任何争议应根据适用法律解决。";
+
+"terms.section9_alt.title" = "禁止用途";
+"terms.section9_alt.content" = "您同意不：\n\n• 将本应用用于任何非法目的\n• 尝试对本应用进行反向工程\n• 规避任何安全功能\n• 使用本应用存储非法内容\n• 违反任何适用的法律或法规";
+
+"terms.section10_alt.title" = "开源组件";
+"terms.section10_alt.content" = "本应用使用开源软件组件。每个组件都受其自身许可条款的约束。您可以在应用的开源许可部分查看所有开源许可证。";
+
+"terms.section11.title" = "条款变更";
+"terms.section11.content" = "我们保留随时修改这些服务条款的权利。变更将在应用内发布后立即生效。变更后继续使用本应用即表示接受修改后的条款。";
+
+"terms.section12.title" = "终止";
+"terms.section12.content" = "您可以随时通过从设备中删除本应用来停止使用。我们保留随时停止本应用或任何功能而不另行通知的权利。\n\n终止后，本地存储的所有数据将保留在您的设备上，直到您删除本应用或手动删除数据。";
+
+"terms.section13.title" = "适用法律";
+"terms.section13.content" = "这些服务条款应根据适用的当地法律进行管辖和解释。因这些条款引起的任何争议应根据当地管辖权解决。";
+
+"terms.section14.title" = "联系信息";
+"terms.section14.content" = "如果您对这些服务条款有任何疑问，请通过应用设置中的发送反馈选项与我们联系。";
+
+/* App Lock Screen */
+"app_lock.unlock_prompt" = "解锁以继续";
+"app_lock.unlock_button" = "使用面容 ID 解锁";
+"app_lock.auth_failed.title" = "认证失败";
+"app_lock.auth_failed.retry" = "重试";
+
+/* Screenshot Warning */
+"screenshot.title" = "检测到截屏";
+"screenshot.message" = "截取助记词短语的屏幕截图可能会危及其安全性。请始终将它们存储在安全的物理位置，避免数字分享。";
+"screenshot.understand" = "我知道了";
+
+/* How It Works */
+"how_it_works.title" = "工作原理";
+"how_it_works.encryption.title" = "端到端加密";
+"how_it_works.encryption.description" = "您的助记词短语在保存到设备的安全存储之前，使用 AES-256-GCM 军事级加密标准进行加密。";
+"how_it_works.key_storage.title" = "安全密钥存储";
+"how_it_works.key_storage.description" = "加密密钥存储在 iOS 钥匙串中，具有硬件支持的保护和生物识别认证（面容 ID/触控 ID）。";
+"how_it_works.zero_knowledge.title" = "零知识设计";
+"how_it_works.zero_knowledge.description" = "我们永远无法访问您的数据。一切都使用只有您控制的密钥在设备上本地加密。";
+"how_it_works.bip39.title" = "BIP-39 标准";
+"how_it_works.bip39.description" = "我们使用行业标准 BIP-39 协议生成和验证助记词短语，确保与所有加密货币钱包的兼容性。";
+
+/* Launch Screen */
+"launch.tagline" = "保护您的Crypto密钥";
+"launch.loading" = "加载中...";
+
+/* Errors */
+"error.generic" = "发生错误。请重试。";
+"error.decryption_failed" = "解密失败。请进行身份验证后重试。";
+"error.backup_failed" = "备份操作失败。请检查您的 iCloud 连接。";
+"error.restore_failed" = "恢复失败。请验证备份密码。";
+
+/* Security Whitepaper */
+"whitepaper.title" = "安全白皮书";
+
+/* Hero */
+"whitepaper.hero.title" = "零知识\n架构";
+"whitepaper.hero.subtitle" = "关于 Seedlock 如何保护您的助记词的技术文档";
+
+/* Core Principle */
+"whitepaper.principle.title" = "核心安全原则";
+"whitepaper.principle.statement" = "您的助记词完全私密";
+"whitepaper.principle.explanation" = "这不是承诺，而是技术保证。您的助记词在同步前就已在设备上加密。解密密钥存储在 iCloud 钥匙串中，受 Apple 端到端加密保护。您的数据始终保持私密和安全。";
+
+/* Architecture */
+"whitepaper.architecture.title" = "安全架构";
+
+"whitepaper.flow.step1.title" = "您的设备";
+"whitepaper.flow.step1.description" = "您创建或导入助记词";
+
+"whitepaper.flow.step2.title" = "本地加密";
+"whitepaper.flow.step2.description" = "使用随机生成的密钥 (DEK) 在您的设备上进行 AES-256-GCM 加密";
+
+"whitepaper.flow.step3a.title" = "CloudKit";
+"whitepaper.flow.step3a.description" = "加密数据同步（受加密保护）";
+
+"whitepaper.flow.step3b.title" = "iCloud 钥匙串";
+"whitepaper.flow.step3b.description" = "解密密钥同步（Apple 的端到端加密）";
+
+"whitepaper.flow.step4.title" = "完全分离";
+"whitepaper.flow.step4.description" = "数据和密钥分开存储。没有两者，您的助记词仍然安全。";
+
+/* Encryption */
+"whitepaper.encryption.title" = "加密技术细节";
+"whitepaper.encryption.algorithm" = "算法";
+"whitepaper.encryption.key_length" = "密钥长度";
+"whitepaper.encryption.key_derivation" = "密钥派生";
+"whitepaper.encryption.mode" = "模式";
+
+/* Storage */
+"whitepaper.storage.title" = "数据存储分离";
+
+"whitepaper.storage.cloudkit.title" = "CloudKit 存储";
+"whitepaper.storage.cloudkit.item1" = "加密的助记词";
+"whitepaper.storage.cloudkit.item2" = "元数据（名称、标签、时间戳）";
+"whitepaper.storage.cloudkit.item3" = "受加密保护";
+
+"whitepaper.storage.keychain.title" = "iCloud 钥匙串";
+"whitepaper.storage.keychain.item1" = "解密密钥 (DEK)";
+"whitepaper.storage.keychain.item2" = "Apple 的端到端加密";
+"whitepaper.storage.keychain.item3" = "受 Apple 安全保护";
+
+/* Guarantees */
+"whitepaper.guarantees.title" = "安全保证";
+"whitepaper.guarantees.item1" = "您的助记词始终保持私密";
+"whitepaper.guarantees.item2" = "您的数据在离开设备前已加密";
+"whitepaper.guarantees.item3" = "解密密钥受 Apple 端到端加密保护";
+"whitepaper.guarantees.item4" = "即使我们的服务器被攻破，您的数据仍然安全";
+
+/* Verification */
+"whitepaper.verification.title" = "如何验证";
+"whitepaper.verification.intro" = "不要信任，要验证。技术用户可以通过以下方式独立确认我们的安全声明：";
+"whitepaper.verification.method1" = "使用网络监控工具（Charles Proxy、Wireshark）检查发送到 CloudKit 的所有数据——您只会看到加密的二进制数据";
+"whitepaper.verification.method2" = "在 CloudKit Dashboard 中检查 iCloud 钥匙串——您不会在那里找到任何解密密钥（它们在 Apple 的受保护钥匙串中）";
+"whitepaper.verification.method3" = "审查我们的加密实现源代码（安全关键组件可供审计）";
+
+/* Open Source */
+"whitepaper.opensource.title" = "开源承诺";
+"whitepaper.opensource.statement" = "我们致力于透明，并计划开源 Seedlock 的关键安全组件。";
+"whitepaper.opensource.commitment" = "通过隐藏实现安全不是真正的安全。我们相信通过开放代码和第三方审计来实现可验证的安全。";
+
+/* Demo Button */
+"whitepaper.demo_button.title" = "交互式安全演示";
+"whitepaper.demo_button.subtitle" = "逐步了解您的数据如何受到保护";
+
+/* Security Demo */
+"security_demo.title" = "安全演示";
+"security_demo.step_counter" = "第 %d 步，共 %d 步";
+"security_demo.next" = "下一步";
+
+/* Step 1 */
+"security_demo.step1.title" = "您的助记词";
+"security_demo.step1.description" = "让我们从一个 12 词助记词开始。这就是需要保护的内容。";
+"security_demo.example_phrase" = "示例助记词（仅用于演示）";
+"security_demo.step1.warning" = "这只是一个示例。永远不要分享您的真实助记词！";
+
+/* Step 2 */
+"security_demo.step2.title" = "加密过程";
+"security_demo.step2.description" = "在同步到任何地方之前，您的助记词会在您的设备上使用军用级 AES-256-GCM 加密。";
+"security_demo.step2.before" = "加密前";
+"security_demo.step2.method" = "AES-256-GCM 加密 + 随机 DEK";
+"security_demo.step2.after" = "加密后（不可读）";
+"security_demo.step2.show_encrypted" = "查看加密数据示例";
+
+/* Step 3 */
+"security_demo.step3.title" = "分离是关键";
+"security_demo.step3.description" = "加密数据和解密密钥存储在完全独立的系统中。这确保了您的助记词保持私密。";
+"security_demo.step3.cloudkit_subtitle" = "Apple 的云存储";
+"security_demo.step3.cloudkit_item1" = "仅存储加密数据";
+"security_demo.step3.keychain_subtitle" = "Apple 的安全保管库";
+"security_demo.step3.keychain_item1" = "存储解密密钥";
+"security_demo.step3.keychain_item2" = "由 Apple 端到端加密";
+"security_demo.step3.insight" = "没有加密数据和密钥两者，您的助记词仍然是安全的。这种分离确保了完全的隐私。";
+
+/* Step 4 */
+"security_demo.step4.title" = "您的数据是安全的";
+"security_demo.step4.description" = "这种架构保证您的助记词受到保护——不是通过承诺，而是通过数学和分离。";
+"security_demo.step4.guarantee1" = "您的助记词始终保持私密";
+"security_demo.step4.guarantee2" = "数据在离开设备前已加密";
+"security_demo.step4.guarantee3" = "密钥在 Apple 的受保护钥匙串中";
+"security_demo.step4.guarantee4" = "即使我们的服务器被攻破，您的数据也是安全的";
+"security_demo.step4.cta" = "现在您了解了 Seedlock 如何保护您的助记词安全！";
+"security_demo.step4.start_using" = "开始使用 Seedlock";
+
+/* Encrypted Data Example */
+"security_demo.encrypted_example.nav_title" = "加密数据";
+"security_demo.encrypted_example.explanation" = "这就是您的助记词在 CloudKit 中加密后的样子。没有解密密钥，它完全不可读。";
+"security_demo.encrypted_example.title" = "实际加密数据：";
+"security_demo.encrypted_example.point1" = "这是真实的加密数据格式——随机的十六进制字符";
+"security_demo.encrypted_example.point2" = "没有来自 iCloud 钥匙串的解密密钥，这是没有意义的";
+"security_demo.encrypted_example.point3" = "即使被拦截，您的助记词仍然是安全的";
+
+/* OCR */
+"ocr.error.invalid_image" = "无效的图片格式";
+"ocr.error.no_text" = "图片中未找到文字";
+"ocr.error.no_mnemonic" = "图片中未找到有效的助记词";
+"ocr.error.load_failed" = "加载图片失败";
+
+/* Camera Scanner */
+"camera_scanner.title" = "扫描助记词";
+"camera_scanner.instruction" = "将相机对准您的助记词";
+"camera_scanner.detected" = "已检测到 %d 个单词";
+"camera_scanner.need_more" = "还需要 %d 个单词（总共 12/15/18/21/24 个）";
+"camera_scanner.ready_count" = "已检测到 %d 个单词 - 可以使用！";
+"camera_scanner.continue_to" = "继续扫描 - 还需 %d 个达到 %d 个单词";
+"camera_scanner.too_many" = "单词过多（%d 个）- 最多 24 个";
+"camera_scanner.use_result" = "使用检测结果";

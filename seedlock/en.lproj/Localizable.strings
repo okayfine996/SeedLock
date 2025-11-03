@@ -1,0 +1,554 @@
+/*
+  Localizable.strings (English)
+  seedlock
+*/
+
+/* Common */
+"common.back" = "Back";
+"common.done" = "Done";
+"common.cancel" = "Cancel";
+"common.save" = "Save";
+"common.delete" = "Delete";
+"common.edit" = "Edit";
+"common.ok" = "OK";
+"common.error" = "Error";
+"common.success" = "Success";
+"common.settings" = "Settings";
+"common.retry" = "Retry";
+
+/* Language */
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.settings_title" = "Language";
+"language.select_language" = "Select Language";
+
+/* Home */
+"home.title" = "My Mnemonics";
+"home.search.placeholder" = "Search mnemonics...";
+"home.filter.all" = "All";
+"home.filter.starred" = "Starred";
+"home.filter.archived" = "Archived";
+"home.empty.title" = "No Mnemonics Yet";
+"home.empty.message" = "Tap the + icon to add your first mnemonic phrase.";
+"home.error.title" = "Something Went Wrong";
+"home.error.message" = "We couldn't load your mnemonics. Please check your connection and try again.";
+"home.add_mnemonic" = "Add Mnemonic";
+"home.create_new" = "Create New";
+"home.import_existing" = "Import Existing";
+"home.delete_confirmation.title" = "Delete Mnemonic?";
+"home.delete_confirmation.message" = "Are you sure you want to delete \"%@\"? This action cannot be undone and will delete the mnemonic from all devices.";
+"home.swipe.delete" = "Delete";
+"home.swipe.archive" = "Archive";
+"home.swipe.unarchive" = "Unarchive";
+"home.swipe.star" = "Star";
+"home.swipe.unstar" = "Unstar";
+
+/* Home Banners */
+"banner.icloud_disabled.title" = "iCloud Not Connected";
+"banner.icloud_disabled.message" = "Sign in to iCloud to enable sync and backup features.";
+"banner.icloud_disabled.action" = "Settings";
+"banner.no_backup.title" = "No Backup Configured";
+"banner.no_backup.message" = "Your mnemonics are not backed up. Set up backup now to protect your data.";
+"banner.no_backup.action" = "Backup";
+"banner.backup_reminder.title" = "Backup Reminder";
+"banner.backup_reminder.message" = "It's been %d days since your last backup. Consider backing up now.";
+"banner.backup_reminder.action" = "Backup";
+"banner.sync_disabled.title" = "iCloud Sync Disabled";
+"banner.sync_disabled.message" = "Enable iCloud Sync to keep your mnemonics synced across devices.";
+"banner.sync_disabled.action" = "Enable";
+"banner.first_mnemonic.title" = "First Mnemonic Created!";
+"banner.first_mnemonic.message" = "Great start! Remember to back up your mnemonics regularly.";
+"banner.first_mnemonic.action" = "Got it";
+"banner.many_mnemonics.title" = "Organize Your Mnemonics";
+"banner.many_mnemonics.message" = "You have %d mnemonics. Try starring important ones for quick access.";
+"banner.many_mnemonics.action" = "Got it";
+
+/* Create Mnemonic */
+"create.title" = "Create Mnemonic";
+"create.name.label" = "Name";
+"create.name.placeholder" = "e.g., My Bitcoin Wallet";
+"create.name.required" = "Name is required";
+"create.length.label" = "Mnemonic Length";
+"create.generate_button" = "Generate";
+"create.preview.title" = "Mnemonic Preview";
+"create.preview.empty" = "Your generated mnemonic will appear here.";
+"create.tags.label" = "Tags";
+"create.tags.select" = "Select tags";
+"create.note.label" = "Note";
+"create.note.placeholder" = "Add an optional note...";
+"create.save_button" = "Save Mnemonic";
+"create.save_confirmation.title" = "Save Mnemonic?";
+"create.save_confirmation.message" = "The mnemonic will be encrypted using AES-256-GCM and securely stored in iOS Keychain. Make sure you have backed it up.";
+"create.success.title" = "Mnemonic Saved";
+"create.success.message" = "Your new mnemonic has been encrypted and securely stored.";
+
+/* Import Mnemonic */
+"import.title" = "Import Mnemonic";
+"import.name.label" = "Name";
+"import.name.placeholder" = "Enter wallet name";
+"import.mnemonic.label" = "Mnemonic";
+"import.paste_button" = "Paste";
+"import.mnemonic.placeholder" = "Enter or paste your 12, 18, or 24-word BIP-39 mnemonic phrase here...";
+"import.error.invalid_count" = "Invalid number of words. Must be 12, 18, or 24.";
+"import.error.invalid_phrase" = "Invalid BIP-39 mnemonic phrase. Please verify and try again.";
+"import.validation.valid" = "Valid BIP-39 mnemonic phrase";
+"import.suggestions.title" = "Suggestions";
+"import.tags.label" = "Tags";
+"import.tags.select" = "Select tags";
+"import.note.label" = "Note (Optional)";
+"import.note.placeholder" = "Add a note...";
+"import.save_button" = "Save";
+"import.success.title" = "Mnemonic Imported";
+"import.success.message" = "Your mnemonic has been encrypted and securely stored.";
+
+/* Detail View */
+"detail.created" = "Created:";
+"detail.last_updated" = "Last updated:";
+"detail.mnemonic_phrase" = "Mnemonic Phrase";
+"detail.loading" = "Authenticating with Keychain...";
+"detail.auto_lock" = "Auto-lock in %@";
+"detail.copy_button" = "Copy";
+"detail.copy_success" = "Copied! Will clear clipboard in 30s for security";
+"detail.screenshot_warning" = "For your security, avoid screenshots or screen recordings. Store your mnemonics in a secure physical location.";
+"detail.delete_button" = "Delete Mnemonic";
+"detail.delete_confirmation.title" = "Delete Mnemonic?";
+"detail.delete_confirmation.message" = "This action cannot be undone. The encrypted mnemonic will be permanently deleted from all synced devices.";
+"detail.error.title" = "Decryption Error";
+"detail.error.message" = "Failed to decrypt. Please authenticate and try again.";
+
+/* Edit Mnemonic */
+"edit.title" = "Edit Mnemonic";
+"edit.name.label" = "Name";
+"edit.name.placeholder" = "e.g., My Bitcoin Wallet";
+"edit.name.required" = "Name is required";
+"edit.mnemonic.label" = "Mnemonic Phrase";
+"edit.mnemonic.encrypted" = "Mnemonic Encrypted";
+"edit.mnemonic.unlock_hint" = "Tap to unlock and view";
+"edit.copy_button" = "Copy";
+"edit.lock_button" = "Lock";
+"edit.unlock_button" = "Unlock";
+"edit.tags.label" = "Tags";
+"edit.tags.placeholder" = "Add tags for categorization";
+"edit.note.label" = "Note";
+"edit.note.placeholder" = "Add an optional note...";
+"edit.note.counter" = "%d/200";
+"edit.save_button" = "Save";
+"edit.cancel_button" = "Cancel";
+"edit.copy_success" = "Mnemonic phrase copied to clipboard";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.section.data_sync" = "DATA & SYNC";
+"settings.section.security" = "SECURITY";
+"settings.section.about" = "ABOUT";
+"settings.section.appearance" = "APPEARANCE";
+"settings.icloud_account" = "iCloud Account";
+"settings.icloud_checking" = "Checking...";
+"settings.icloud_connected" = "Connected";
+"settings.icloud_not_signed_in" = "Not signed in";
+"settings.icloud_sync" = "iCloud Sync";
+"settings.icloud_sync_description" = "Sync your encrypted data and keys across all your devices";
+"settings.icloud_sync_active" = "Sync enabled";
+"settings.icloud_sync_disabled" = "Sync disabled";
+"settings.backup_restore" = "Backup & Restore";
+"settings.app_lock" = "App Lock";
+"settings.require_biometrics" = "Require Biometrics to View";
+"settings.clipboard_timeout" = "Clipboard Timeout";
+"settings.screenshot_warning" = "Screenshot Warning";
+"settings.security_whitepaper" = "Security Whitepaper";
+"settings.about_privacy" = "About & Privacy";
+"settings.diagnostics" = "Diagnostics";
+"settings.app_version" = "App Version";
+"settings.clipboard_timeout_message" = "Choose how long copied text stays in clipboard";
+"settings.clipboard.30_seconds" = "30 seconds";
+"settings.clipboard.1_minute" = "1 minute";
+"settings.clipboard.2_minutes" = "2 minutes";
+"settings.clipboard.5_minutes" = "5 minutes";
+"settings.restart_required_title" = "Restart Required";
+"settings.restart_required_message" = "Please close and reopen the app to enable iCloud sync. Your network permission will be requested on next launch.";
+
+/* Backup */
+"backup.title" = "Backup & Restore";
+"backup.section.auto" = "AUTOMATIC BACKUP";
+"backup.section.icloud_backups" = "ICLOUD BACKUPS";
+"backup.section.restore" = "RESTORE";
+"backup.section.about" = "ABOUT BACKUPS";
+"backup.auto_backup" = "Auto Backup";
+"backup.auto_backup_hint" = "Enable Auto Backup to set your backup password.";
+"backup.backup_interval" = "Backup Interval";
+"backup.interval.daily" = "Daily";
+"backup.interval.weekly" = "Weekly";
+"backup.interval.monthly" = "Monthly";
+"backup.last_backup" = "Last Backup";
+"backup.last_backup.never" = "Never";
+"backup.backup_now" = "Backup Now";
+"backup.view_all" = "View All Backups (%d)";
+"backup.restore_from_file" = "Restore from File";
+"backup.set_password.title" = "Set Backup Password";
+"backup.set_password.message" = "Choose a strong password to encrypt your backups using AES-256-GCM. This will enable automatic backups and create your first encrypted backup.";
+"backup.set_password.button" = "Enable Auto Backup";
+"backup.restore_password.title" = "Restore Backup";
+"backup.restore_password.message" = "Enter the password you used to encrypt this backup file.";
+"backup.restore_password.button" = "Restore Backup";
+"backup.info.encrypted.title" = "AES-256 Encrypted";
+"backup.info.encrypted.description" = "All backups use military-grade AES-256-GCM encryption with your password";
+"backup.info.icloud.title" = "iCloud Drive Storage";
+"backup.info.icloud.description" = "Encrypted backups are securely stored in your private iCloud Drive";
+"backup.info.sync.title" = "Sync vs Backup";
+"backup.info.sync.description" = "Sync keeps live data synchronized. Backups create encrypted restore points.";
+"backup.info.important.title" = "Important";
+"backup.info.important.description" = "Your backup password cannot be recovered. Store it securely.";
+"backup.password.placeholder" = "Backup Password";
+"backup.password.confirm" = "Confirm Password";
+"backup.mnemonics_count" = "%d mnemonics";
+"backup.menu.restore" = "Restore";
+"backup.menu.delete" = "Delete";
+"backup.success.set_password" = "Backup password set successfully! Automatic encrypted backups enabled.";
+"backup.success.created" = "Encrypted backup completed and saved to iCloud Drive.";
+"backup.success.restored" = "Successfully restored %d encrypted mnemonics.";
+
+/* Onboarding */
+"onboarding.welcome.title" = "Secure Your Crypto\nKeys.";
+"onboarding.welcome.subtitle" = "Professional-grade security for your\ncryptocurrency mnemonic phrases.";
+"onboarding.security.title" = "Your Security, Your Control";
+"onboarding.security.subtitle" = "SeedLock protects your crypto keys with enterprise-grade security and zero-knowledge architecture.";
+"onboarding.security.offline.title" = "100% Offline Storage";
+"onboarding.security.offline.description" = "Your keys never leave your device. All encryption and storage happens locally, ensuring complete air-gap security.";
+"onboarding.security.encryption.title" = "Military-Grade Encryption";
+"onboarding.security.encryption.description" = "AES-256-GCM encryption protects every mnemonic phrase with the same standards used by government agencies.";
+"onboarding.security.biometric.title" = "Biometric Protection";
+"onboarding.security.biometric.description" = "Face ID or Touch ID authentication required to view sensitive data, preventing unauthorized access.";
+"onboarding.security.no_tracking.title" = "Zero Data Collection";
+"onboarding.security.no_tracking.description" = "We never collect, log, or transmit any user data. Complete privacy with no analytics or tracking whatsoever.";
+"onboarding.cloud.title" = "Optional iCloud Sync";
+"onboarding.cloud.subtitle" = "Keep your encrypted mnemonics synchronized across all your Apple devices with end-to-end encryption.";
+"onboarding.cloud.sync.title" = "Seamless Sync";
+"onboarding.cloud.sync.description" = "Apple CloudKit securely syncs your end-to-end encrypted data across all your devices automatically.";
+"onboarding.cloud.keychain.title" = "iCloud Keychain";
+"onboarding.cloud.keychain.description" = "Encryption keys sync via Apple's secure iCloud Keychain with hardware-level protection.";
+"onboarding.cloud.backup.title" = "Encrypted Backups";
+"onboarding.cloud.backup.description" = "Create password-protected, AES-256 encrypted backup files stored in your private iCloud Drive.";
+"onboarding.cloud.optional.title" = "Completely Optional";
+"onboarding.cloud.optional.description" = "All cloud features are entirely optional. You can use SeedLock 100% offline if you prefer complete isolation.";
+"onboarding.cloud.get_started" = "Get Started";
+"onboarding.cloud.learn_more" = "Learn More About Security";
+
+/* Security */
+"security.biometric_prompt" = "Unlock mnemonic phrase";
+"security.app_lock_prompt" = "Unlock SeedLock";
+
+/* Alerts */
+"alert.icloud_not_available" = "Please sign in to iCloud first. Go to Settings → [Your Name] → iCloud.";
+"alert.icloud_sync_enabled" = "iCloud sync enabled. Your encrypted data and keys will sync across all devices.";
+"alert.icloud_sync_disabled" = "iCloud sync disabled. Data and keys will remain local only.";
+"alert.biometric_not_available" = "Biometric authentication is not available on this device.";
+"alert.sync_status" = "Sync Status";
+
+/* Diagnostics */
+"diagnostics.title" = "Diagnostics";
+"diagnostics.errors_count" = "Errors: %d";
+"diagnostics.export_button" = "Export";
+"diagnostics.info.os" = "OS";
+"diagnostics.info.device" = "Device";
+"diagnostics.info.app_version" = "App Version";
+
+/* About */
+"about.title" = "About & Privacy";
+"about.zero_knowledge.title" = "Zero-Knowledge Architecture";
+"about.zero_knowledge.description" = "SeedLock is built with a zero-knowledge architecture. We never have access to your secret phrases or encryption keys. All data remains exclusively on your device, ensuring your crypto assets are completely private and under your sole control.";
+"about.secure_storage.title" = "Military-Grade Encryption";
+"about.secure_storage.description" = "Your mnemonic phrases are protected using AES-256-GCM encryption, the same standard used by banks and government agencies. All data is encrypted locally before storage in iOS Keychain, Apple's most secure storage system. Optional iCloud backups use end-to-end encryption, ensuring only you can decrypt your information.";
+"about.anonymous_logging.title" = "Complete Privacy Guarantee";
+"about.anonymous_logging.description" = "SeedLock operates 100% offline and never transmits your data over the internet. We do not collect, log, track, or analyze any user data including mnemonic phrases, passwords, biometric data, usage patterns, or personal information. Your privacy is absolute.";
+"about.legal_licenses" = "Legal & Licenses";
+"about.terms_of_service" = "Terms of Service";
+"about.privacy_policy" = "Privacy Policy";
+"about.open_source_licenses" = "Open Source Licenses";
+"about.contact_feedback" = "Contact & Feedback";
+"about.contact_description" = "Have questions or suggestions? We value your feedback and continuously work to improve SeedLock based on user input. Your insights help us build a better, more secure application for the entire community.";
+"about.send_feedback" = "Send Feedback";
+"about.mail_error.title" = "Cannot Send Email";
+"about.mail_error.message" = "Your device is not configured to send email. Please add a mail account in iOS Settings to send feedback.";
+
+/* Privacy Policy */
+"privacy.title" = "Privacy Policy";
+"privacy.last_updated" = "Last Updated: October 25, 2025";
+"privacy.intro" = "Your privacy is critically important to us. This policy explains how SeedLock handles your data with industry-leading encryption and zero-knowledge architecture.";
+
+"privacy.section1.title" = "Zero-Knowledge Architecture";
+"privacy.section1.content" = "Seedlock is designed with a zero-knowledge architecture, ensuring complete privacy:\n\n• Your mnemonic phrases are encrypted locally\n• Your data remains private at all times\n• Only you can access your data\n• All encryption happens on your device";
+
+"privacy.section2.title" = "Data We Don't Collect";
+"privacy.section2.content" = "Seedlock does NOT collect, store, or transmit:\n\n• Your mnemonic phrases\n• Your passwords or backup passwords\n• Your personal information\n• Your usage patterns\n• Analytics or tracking data\n• Location data";
+
+"privacy.section3.title" = "Local Data Storage";
+"privacy.section3.content" = "All your data is stored locally on your device:\n\n• Encrypted with AES-256-GCM\n• Stored in iOS Keychain\n• Never leaves your device (unless you enable iCloud)\n• Only accessible with device authentication";
+
+"privacy.section4.title" = "Optional iCloud Sync";
+"privacy.section4.content" = "If you choose to enable iCloud sync:\n\n• Data is end-to-end encrypted before syncing\n• Synced via Apple's CloudKit service\n• Apple's privacy policy applies to iCloud data\n• You can disable sync at any time\n• Synced data remains encrypted";
+
+"privacy.section5.title" = "Third-Party Services";
+"privacy.section5.content" = "Seedlock uses the following Apple services:\n\n• iOS Keychain (for secure local storage)\n• CloudKit (optional, for encrypted sync)\n• iCloud Drive (optional, for backups)\n\nThese services are governed by Apple's privacy policy.";
+
+"privacy.section6.title" = "Your Rights";
+"privacy.section6.content" = "You have complete control over your data:\n\n• Export your data at any time\n• Delete your data at any time\n• Disable iCloud sync at any time\n• No account required\n• No vendor lock-in";
+
+"privacy.section7.title" = "Changes to Privacy Policy";
+"privacy.section7.content" = "We may update this privacy policy from time to time. Changes will be reflected in the app with an updated \"Last Updated\" date.";
+
+/* Terms of Service */
+"terms.title" = "Terms of Service";
+"terms.last_updated" = "Last Updated: October 25, 2025";
+"terms.intro" = "Please read these Terms of Service carefully before using SeedLock.";
+"terms.warning.title" = "⚠️ Important Warning";
+"terms.warning.message" = "This app uses AES-256 encryption to protect your cryptocurrency mnemonic phrases. However, due to circumstances beyond our control—including but not limited to device hardware failure, physical theft, security breaches, vulnerabilities in Apple's iOS system, unauthorized access, user error, or force majeure events—your mnemonic phrases may be lost, stolen, or compromised. Such losses can result in permanent and irreversible loss of funds. We are not responsible for any losses under any circumstances. Always maintain secure offline backups of your mnemonic phrases.";
+"terms.agreement.title" = "You Agreed to These Terms";
+"terms.agreement.message" = "By using SeedLock, you acknowledge that you have read and agree to these Terms of Service.";
+
+"terms.section1.title" = "Acceptance of Terms";
+"terms.section1.content" = "By downloading, installing, or using Seedlock (\"the App\"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.";
+
+"terms.section2.title" = "Description of Service";
+"terms.section2.content" = "Seedlock is a secure mnemonic phrase management application that allows you to:\n\n• Store and manage cryptocurrency mnemonic phrases\n• Generate BIP-39 compliant mnemonic phrases\n• Encrypt data locally on your device\n• Optionally sync encrypted data via iCloud\n• Create secure backups of your data\n\nThe App operates entirely offline and does not transmit your mnemonic phrases to any external servers.";
+
+"terms.section3.title" = "User Responsibilities";
+"terms.section3.content" = "You are solely responsible for:\n\n• Maintaining the security of your device\n• Safeguarding your mnemonic phrases\n• Creating and maintaining secure backups\n• Remembering your backup passwords\n• Any actions taken using the App\n\nWe strongly recommend keeping physical backups of your mnemonic phrases in a secure location.";
+
+"terms.section4.title" = "⚠️ Critical Risk Warning";
+"terms.section4.content" = "IMPORTANT: Please read this section carefully before using the App.\n\nLoss of Mnemonic Phrases:\n• If you lose your mnemonic phrases, you may permanently lose access to your cryptocurrency wallets and funds\n• Lost mnemonic phrases CANNOT be recovered\n• Deleted data CANNOT be restored\n• No support team can help you recover lost data\n\nTheft or Unauthorized Access:\n• If someone gains access to your mnemonic phrases, they can steal your cryptocurrency funds\n• Mnemonic phrases provide full control over associated wallets\n• Anyone with your phrases can transfer all funds without your permission\n• Such transfers are irreversible and cannot be undone\n\nDevice Security:\n• You are responsible for securing your device\n• Screenshots, screen recordings, or shoulder surfing can expose your phrases\n• Malware or spyware on your device may compromise your data\n• Physical access to unlocked devices can lead to theft\n\nBackup Security:\n• Lost backup passwords cannot be recovered\n• Corrupted backups may be unrecoverable\n• You must store backup files securely\n• Backup files in wrong hands can lead to theft\n\nNO LIABILITY FOR LOSSES:\nWE ARE NOT RESPONSIBLE FOR ANY FINANCIAL LOSSES, INCLUDING BUT NOT LIMITED TO:\n• Lost cryptocurrency funds due to lost mnemonic phrases\n• Stolen cryptocurrency funds due to compromised phrases\n• Losses due to device theft or unauthorized access\n• Losses due to forgotten passwords or encryption keys\n• Losses due to corrupted or lost backup files\n• Losses due to user error or negligence\n• Any other losses related to the use of this App\n\nBy using this App, you acknowledge these risks and agree to bear all consequences.";
+
+"terms.section5.title" = "Zero-Knowledge Architecture";
+"terms.section5.content" = "Seedlock is built on a zero-knowledge architecture:\n\n• Your mnemonic phrases remain completely private\n• Lost or forgotten data cannot be recovered\n• Your backups are encrypted with your password only\n• All encryption happens locally on your device\n\nYou are solely responsible for maintaining access to your data. Lost passwords or mnemonic phrases cannot be recovered by anyone.";
+
+"terms.section6.title" = "Data Storage and Backup";
+"terms.section6.content" = "Local Storage:\n• All data is encrypted using AES-256-GCM encryption\n• Encryption keys are stored in iOS Keychain\n• Data remains on your device unless you enable iCloud sync\n\nOptional iCloud Sync:\n• Encrypted data may be synced via CloudKit\n• Apple's iCloud terms and privacy policy apply\n• Data remains encrypted in transit and at rest\n• You can disable sync at any time";
+
+"terms.section7.title" = "No Warranty";
+"terms.section7.content" = "THE APP IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND:\n\n• No guarantees about app availability\n• No responsibility for data loss\n• No guarantee of complete security\n• The app may contain bugs or errors\n\nUse of this app is at your own risk. We recommend maintaining multiple backups of critical data.";
+
+"terms.section8.title" = "Limitation of Liability";
+"terms.section8.content" = "To the maximum extent permitted by law, we are not liable for any losses or damages, including but not limited to:\n\nFinancial Losses:\n• Loss of cryptocurrency funds due to lost mnemonic phrases\n• Theft of cryptocurrency funds\n• Market losses or trading decisions\n\nData Losses:\n• Lost, corrupted, or inaccessible data\n• Failed backups or sync operations\n• Device failure or malfunction\n\nIndirect Damages:\n• Loss of business or profits\n• Emotional distress\n• Consequential or punitive damages";
+
+"terms.section9.title" = "Updates and Changes";
+"terms.section9.content" = "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting in the App. Your continued use of the App after changes constitutes acceptance of the updated terms.";
+
+"terms.section10.title" = "Governing Law";
+"terms.section10.content" = "These Terms of Service are governed by the laws of your jurisdiction. Any disputes shall be resolved in accordance with applicable law.";
+
+"terms.section9_alt.title" = "Prohibited Uses";
+"terms.section9_alt.content" = "You agree not to:\n\n• Use the App for any illegal purposes\n• Attempt to reverse engineer the App\n• Circumvent any security features\n• Use the App to store illegal content\n• Violate any applicable laws or regulations";
+
+"terms.section10_alt.title" = "Open Source Components";
+"terms.section10_alt.content" = "This App uses open source software components. Each component is governed by its own license terms. You can view all open source licenses in the \"Open Source Licenses\" section of the app.";
+
+"terms.section11.title" = "Changes to Terms";
+"terms.section11.content" = "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting within the App. Your continued use of the App after changes constitutes acceptance of the modified terms.";
+
+"terms.section12.title" = "Termination";
+"terms.section12.content" = "You may stop using the App at any time by deleting it from your device. We reserve the right to discontinue the App or any features at any time without notice.\n\nUpon termination, all data stored locally will remain on your device until you delete the App or manually delete the data.";
+
+"terms.section13.title" = "Governing Law";
+"terms.section13.content" = "These Terms of Service shall be governed by and construed in accordance with applicable local laws. Any disputes arising from these terms shall be resolved in accordance with local jurisdiction.";
+
+"terms.section14.title" = "Contact Information";
+"terms.section14.content" = "If you have any questions about these Terms of Service, please contact us through the \"Send Feedback\" option in the app settings.";
+
+/* Tag Picker */
+"tags.title" = "Select Tags";
+"tags.search_placeholder" = "Add or search tags";
+"tags.selected_count" = "Selected (%d/5)";
+"tags.create_new" = "Create '%@'";
+"tags.max_length_error" = "Tag name must be 16 characters or less";
+"tags.max_count_error" = "Maximum 5 tags allowed";
+"tags.max_selected" = "Maximum 5 tags selected";
+
+/* All Backups */
+"all_backups.title" = "All Backups";
+"all_backups.mnemonics_count" = "%d mnemonics";
+
+/* Enable App Lock */
+"enable_app_lock.title" = "App Lock";
+"enable_app_lock.description" = "Enabling app lock will require Face ID or Touch ID authentication to open SeedLock, adding an extra layer of security to protect your mnemonic phrases.";
+"enable_app_lock.button" = "Enable App Lock";
+"enable_app_lock.subtitle" = "Biometric authentication will be required to unlock the app.";
+"enable_app_lock.cancel" = "Maybe Later";
+
+/* Enable Biometrics */
+"enable_biometrics.title" = "Require Biometrics to View";
+"enable_biometrics.description" = "Enabling this feature requires Face ID or Touch ID authentication every time you view mnemonic phrases, providing maximum security for your sensitive cryptographic data.";
+"enable_biometrics.button" = "Enable Biometric Authentication";
+"enable_biometrics.subtitle" = "Biometric authentication will be required to view mnemonics.";
+"enable_biometrics.cancel" = "Skip for Now";
+
+/* App Lock Screen */
+"app_lock.unlock_prompt" = "Unlock to continue";
+"app_lock.unlock_button" = "Unlock with Face ID";
+"app_lock.auth_failed.title" = "Authentication Failed";
+"app_lock.auth_failed.retry" = "Try Again";
+
+/* Screenshot Warning */
+"screenshot.title" = "Screenshot Detected";
+"screenshot.message" = "Taking screenshots of your mnemonic phrases may compromise their security. Always store them in a secure physical location and avoid digital sharing.";
+"screenshot.understand" = "I Understand";
+
+/* How It Works */
+"how_it_works.title" = "How It Works";
+"how_it_works.encryption.title" = "End-to-End Encryption";
+"how_it_works.encryption.description" = "Your mnemonic phrases are encrypted using AES-256-GCM, a military-grade encryption standard, before being saved to your device's secure storage.";
+"how_it_works.key_storage.title" = "Secure Key Storage";
+"how_it_works.key_storage.description" = "Encryption keys are stored in iOS Keychain with hardware-backed protection and biometric authentication (Face ID/Touch ID).";
+"how_it_works.zero_knowledge.title" = "Zero-Knowledge Design";
+"how_it_works.zero_knowledge.description" = "We never have access to your data. Everything is encrypted locally on your device using keys only you control.";
+"how_it_works.bip39.title" = "BIP-39 Standard";
+"how_it_works.bip39.description" = "We use the industry-standard BIP-39 protocol for mnemonic phrase generation and validation, ensuring compatibility with all cryptocurrency wallets.";
+
+/* Launch Screen */
+"launch.tagline" = "Secure Your Digital Keys";
+"launch.loading" = "Loading...";
+
+/* Time Formats */
+"time.seconds" = "%d seconds";
+"time.minute" = "1 minute";
+"time.minutes" = "%d minutes";
+
+/* Errors */
+"error.generic" = "An error occurred. Please try again.";
+"error.decryption_failed" = "Decryption failed. Please authenticate and try again.";
+"error.backup_failed" = "Backup operation failed. Please check your iCloud connection.";
+"error.restore_failed" = "Restore failed. Please verify the backup password.";
+
+/* Security Whitepaper */
+"whitepaper.title" = "Security Whitepaper";
+
+/* Hero */
+"whitepaper.hero.title" = "Zero-Knowledge\nArchitecture";
+"whitepaper.hero.subtitle" = "Technical documentation on how Seedlock protects your recovery phrases";
+
+/* Core Principle */
+"whitepaper.principle.title" = "Core Security Principle";
+"whitepaper.principle.statement" = "Your Mnemonic Phrases Are Fully Private";
+"whitepaper.principle.explanation" = "This isn't a promise—it's a technical guarantee. Your recovery phrases are encrypted on your device before syncing. The decryption keys are stored in iCloud Keychain with Apple's end-to-end encryption. Your data remains private and secure at all times.";
+
+/* Architecture */
+"whitepaper.architecture.title" = "Security Architecture";
+
+"whitepaper.flow.step1.title" = "Your Device";
+"whitepaper.flow.step1.description" = "You create or import a mnemonic phrase";
+
+"whitepaper.flow.step2.title" = "Local Encryption";
+"whitepaper.flow.step2.description" = "AES-256-GCM encryption happens on your device using a randomly generated key (DEK)";
+
+"whitepaper.flow.step3a.title" = "CloudKit";
+"whitepaper.flow.step3a.description" = "Encrypted data syncs (protected by encryption)";
+
+"whitepaper.flow.step3b.title" = "iCloud Keychain";
+"whitepaper.flow.step3b.description" = "Decryption key syncs (Apple's end-to-end encryption)";
+
+"whitepaper.flow.step4.title" = "Complete Separation";
+"whitepaper.flow.step4.description" = "Data and keys are stored separately. Without both, your phrases remain secure.";
+
+/* Encryption */
+"whitepaper.encryption.title" = "Encryption Technical Details";
+"whitepaper.encryption.algorithm" = "Algorithm";
+"whitepaper.encryption.key_length" = "Key Length";
+"whitepaper.encryption.key_derivation" = "Key Derivation";
+"whitepaper.encryption.mode" = "Mode";
+
+/* Storage */
+"whitepaper.storage.title" = "Data Storage Separation";
+
+"whitepaper.storage.cloudkit.title" = "CloudKit Storage";
+"whitepaper.storage.cloudkit.item1" = "Encrypted mnemonic phrases";
+"whitepaper.storage.cloudkit.item2" = "Metadata (name, tags, timestamps)";
+"whitepaper.storage.cloudkit.item3" = "Protected by encryption";
+
+"whitepaper.storage.keychain.title" = "iCloud Keychain";
+"whitepaper.storage.keychain.item1" = "Decryption keys (DEK)";
+"whitepaper.storage.keychain.item2" = "Apple's end-to-end encryption";
+"whitepaper.storage.keychain.item3" = "Protected by Apple's security";
+
+/* Guarantees */
+"whitepaper.guarantees.title" = "Security Guarantees";
+"whitepaper.guarantees.item1" = "Your mnemonic phrases remain private at all times";
+"whitepaper.guarantees.item2" = "Your data is encrypted before leaving your device";
+"whitepaper.guarantees.item3" = "Decryption keys are protected by Apple's end-to-end encryption";
+"whitepaper.guarantees.item4" = "Even if our servers were compromised, your data remains secure";
+
+/* Verification */
+"whitepaper.verification.title" = "How You Can Verify";
+"whitepaper.verification.intro" = "Don't trust, verify. Here's how technical users can independently confirm our security claims:";
+"whitepaper.verification.method1" = "Use network monitoring tools (Charles Proxy, Wireshark) to inspect all data sent to CloudKit—you'll only see encrypted binary data";
+"whitepaper.verification.method2" = "Check iCloud Keychain in CloudKit Dashboard—you won't find any decryption keys there (they're in Apple's protected Keychain)";
+"whitepaper.verification.method3" = "Review our encryption implementation in the source code (security-critical components available for audit)";
+
+/* Open Source */
+"whitepaper.opensource.title" = "Open Source Commitment";
+"whitepaper.opensource.statement" = "We are committed to transparency and plan to open-source critical security components of Seedlock.";
+"whitepaper.opensource.commitment" = "Security through obscurity is not security. We believe in verifiable security through open code and third-party audits.";
+
+/* Demo Button */
+"whitepaper.demo_button.title" = "Interactive Security Demo";
+"whitepaper.demo_button.subtitle" = "See how your data is protected step-by-step";
+
+/* Security Demo */
+"security_demo.title" = "Security Demo";
+"security_demo.step_counter" = "Step %d of %d";
+"security_demo.next" = "Next";
+
+/* Step 1 */
+"security_demo.step1.title" = "Your Recovery Phrase";
+"security_demo.step1.description" = "Let's start with a 12-word recovery phrase. This is what needs to be protected.";
+"security_demo.example_phrase" = "Example Phrase (for demonstration only)";
+"security_demo.step1.warning" = "This is only an example. Never share your real recovery phrase!";
+
+/* Step 2 */
+"security_demo.step2.title" = "Encryption in Action";
+"security_demo.step2.description" = "Before syncing anywhere, your phrase is encrypted right on your device using military-grade AES-256-GCM encryption.";
+"security_demo.step2.before" = "Before Encryption";
+"security_demo.step2.method" = "AES-256-GCM Encryption + Random DEK";
+"security_demo.step2.after" = "After Encryption (Unreadable)";
+"security_demo.step2.show_encrypted" = "View Encrypted Data Example";
+
+/* Step 3 */
+"security_demo.step3.title" = "Separation is Key";
+"security_demo.step3.description" = "The encrypted data and decryption key are stored in completely separate systems. This ensures your phrases remain private.";
+"security_demo.step3.cloudkit_subtitle" = "Apple's cloud storage";
+"security_demo.step3.cloudkit_item1" = "Stores encrypted data only";
+"security_demo.step3.keychain_subtitle" = "Apple's secure vault";
+"security_demo.step3.keychain_item1" = "Stores the decryption key";
+"security_demo.step3.keychain_item2" = "End-to-end encrypted by Apple";
+"security_demo.step3.insight" = "Without BOTH the encrypted data AND the key, your phrases remain secure. The separation ensures complete privacy.";
+
+/* Step 4 */
+"security_demo.step4.title" = "Your Data is Safe";
+"security_demo.step4.description" = "This architecture guarantees that your recovery phrases are protected—not by promises, but by mathematics and separation.";
+"security_demo.step4.guarantee1" = "Your phrases remain private at all times";
+"security_demo.step4.guarantee2" = "Data is encrypted before leaving your device";
+"security_demo.step4.guarantee3" = "Keys are in Apple's protected Keychain";
+"security_demo.step4.guarantee4" = "Even if our servers were hacked, your data stays safe";
+"security_demo.step4.cta" = "Now you understand how Seedlock keeps your recovery phrases secure!";
+"security_demo.step4.start_using" = "Start Using Seedlock";
+
+/* Encrypted Data Example */
+"security_demo.encrypted_example.nav_title" = "Encrypted Data";
+"security_demo.encrypted_example.explanation" = "This is what your encrypted recovery phrase looks like in CloudKit. It's completely unreadable without the decryption key.";
+"security_demo.encrypted_example.title" = "Actual Encrypted Data:";
+"security_demo.encrypted_example.point1" = "This is real encrypted data format—random hexadecimal characters";
+"security_demo.encrypted_example.point2" = "Without the decryption key from iCloud Keychain, this is meaningless";
+"security_demo.encrypted_example.point3" = "Even if intercepted, your recovery phrase remains secure";
+
+/* OCR */
+"ocr.error.invalid_image" = "Invalid image format";
+"ocr.error.no_text" = "No text found in image";
+"ocr.error.no_mnemonic" = "No valid recovery phrase found in image";
+"ocr.error.load_failed" = "Failed to load image";
+
+/* Camera Scanner */
+"camera_scanner.title" = "Scan Recovery Phrase";
+"camera_scanner.instruction" = "Point camera at your recovery phrase";
+"camera_scanner.detected" = "%d words detected";
+"camera_scanner.need_more" = "Need %d more words (12/15/18/21/24 total)";
+"camera_scanner.ready_count" = "%d words detected - Ready!";
+"camera_scanner.continue_to" = "Continue scanning - need %d more for %d words";
+"camera_scanner.too_many" = "Too many words (%d) - Maximum is 24";
+"camera_scanner.use_result" = "Use Detected Phrase";
