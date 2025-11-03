@@ -263,20 +263,11 @@ A: Current version supports viewing and copying. Future versions will support en
 - ✅ iCloud Keychain integration
 - ✅ Search and filter
 - ✅ Tag management
+- ✅ OCR image recognition import
+- ✅ Recovery codes (Keychain fallback)
+- ✅ Local encrypted export
+- ✅ CloudKit sync status indicator
 
-### v1.1 (Planned)
-- [ ] OCR image recognition import
-- [ ] Recovery codes (Keychain fallback)
-- [ ] Local encrypted export
-- [ ] Chinese/Japanese/Korean support
-- [ ] CloudKit sync status indicator
-
-### v1.2 (Future)
-- [ ] iPad optimization
-- [ ] Widget support
-- [ ] Shortcuts integration
-- [ ] Backup reminders
-- [ ] More themes
 
 ## Contributing
 
