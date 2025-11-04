@@ -81,58 +81,65 @@ struct TermsOfServiceView: View {
                             content: "terms.section6.content".localized
                         )
                         
-                        // 7. No Warranty
+                        // 7. Third-Party Service Dependencies and Risks
                         TermsSection(
                             number: "7",
+                            title: "terms.section6a.title".localized,
+                            content: "terms.section6a.content".localized
+                        )
+                        
+                        // 8. No Warranty
+                        TermsSection(
+                            number: "8",
                             title: "terms.section7.title".localized,
                             content: "terms.section7.content".localized
                         )
                         
-                        // 8. Limitation of Liability
+                        // 9. Limitation of Liability
                         TermsSection(
-                            number: "8",
+                            number: "9",
                             title: "terms.section8.title".localized,
                             content: "terms.section8.content".localized
                         )
                         
-                        // 9. Prohibited Uses
-                        TermsSection(
-                            number: "9",
-                            title: "terms.section9_alt.title".localized,
-                            content: "terms.section9_alt.content".localized
-                        )
-                        
-                        // 10. Open Source
+                        // 10. Prohibited Uses
                         TermsSection(
                             number: "10",
-                            title: "terms.section10_alt.title".localized,
-                            content: "terms.section10_alt.content".localized
+                            title: "terms.section9.title".localized,
+                            content: "terms.section9.content".localized
                         )
                         
-                        // 11. Changes to Terms
+                        // 11. Open Source Components
                         TermsSection(
                             number: "11",
+                            title: "terms.section10.title".localized,
+                            content: "terms.section10.content".localized
+                        )
+                        
+                        // 12. Changes to Terms
+                        TermsSection(
+                            number: "12",
                             title: "terms.section11.title".localized,
                             content: "terms.section11.content".localized
                         )
                         
-                        // 12. Termination
+                        // 13. Termination
                         TermsSection(
-                            number: "12",
+                            number: "13",
                             title: "terms.section12.title".localized,
                             content: "terms.section12.content".localized
                         )
                         
-                        // 13. Governing Law
+                        // 14. Governing Law and Jurisdiction
                         TermsSection(
-                            number: "13",
+                            number: "14",
                             title: "terms.section13.title".localized,
                             content: "terms.section13.content".localized
                         )
                         
-                        // 14. Contact
+                        // 15. Contact Information
                         TermsSection(
-                            number: "14",
+                            number: "15",
                             title: "terms.section14.title".localized,
                             content: "terms.section14.content".localized
                         )

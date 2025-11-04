@@ -31,12 +31,13 @@ struct CreateMnemonicView: View {
     private let languageOptions = ["English"]
     
     var body: some View {
-        ZStack {
-            Color.appBackground
-                .ignoresSafeArea()
-            
-            ScrollView {
-                VStack(spacing: Theme.spacing24) {
+        NavigationStack {
+            ZStack {
+                Color.appBackground
+                    .ignoresSafeArea()
+                
+                ScrollView {
+                    VStack(spacing: Theme.spacing24) {
                     // Name Input
                     VStack(alignment: .leading, spacing: Theme.spacing8) {
                         Text("create.name.label".localized)
@@ -245,7 +246,7 @@ struct CreateMnemonicView: View {
                     Button(action: {
                         showSaveConfirmation = true
                     }) {
-                        Text("create.save_button".localized)
+                        Text("common.save".localized)
                             .font(.system(size: 17, weight: .semibold))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
@@ -256,9 +257,24 @@ struct CreateMnemonicView: View {
                             )
                     }
                     .disabled(!canSave)
+                    .padding(.bottom, Theme.spacing32)
                 }
                 .padding(Theme.spacing16)
                 .padding(.top, Theme.spacing8)
+                }
+            }
+            .navigationTitle("create.title".localized)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundColor(.appPrimary)
+                    }
+                }
             }
         }
         .sheet(isPresented: $showTagPicker) {

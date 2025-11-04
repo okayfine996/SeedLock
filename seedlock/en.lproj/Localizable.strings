@@ -212,8 +212,8 @@
 "onboarding.welcome.subtitle" = "Professional-grade security for your\ncryptocurrency mnemonic phrases.";
 "onboarding.security.title" = "Your Security, Your Control";
 "onboarding.security.subtitle" = "SeedLock protects your crypto keys with enterprise-grade security and zero-knowledge architecture.";
-"onboarding.security.offline.title" = "100% Offline Storage";
-"onboarding.security.offline.description" = "Your keys never leave your device. All encryption and storage happens locally, ensuring complete air-gap security.";
+"onboarding.security.offline.title" = "Offline by Default";
+"onboarding.security.offline.description" = "By default, your data stays completely local on your device. All encryption and storage happens locally, ensuring complete air-gap security.";
 "onboarding.security.encryption.title" = "Military-Grade Encryption";
 "onboarding.security.encryption.description" = "AES-256-GCM encryption protects every mnemonic phrase with the same standards used by government agencies.";
 "onboarding.security.biometric.title" = "Biometric Protection";
@@ -255,11 +255,11 @@
 /* About */
 "about.title" = "About & Privacy";
 "about.zero_knowledge.title" = "Zero-Knowledge Architecture";
-"about.zero_knowledge.description" = "SeedLock is built with a zero-knowledge architecture. We never have access to your secret phrases or encryption keys. All data remains exclusively on your device, ensuring your crypto assets are completely private and under your sole control.";
+"about.zero_knowledge.description" = "SeedLock is built with a zero-knowledge architecture. We never have access to your secret phrases or encryption keys. All data is encrypted before leaving your device, ensuring your crypto assets are completely private and under your sole control.";
 "about.secure_storage.title" = "Military-Grade Encryption";
 "about.secure_storage.description" = "Your mnemonic phrases are protected using AES-256-GCM encryption, the same standard used by banks and government agencies. All data is encrypted locally before storage in iOS Keychain, Apple's most secure storage system. Optional iCloud backups use end-to-end encryption, ensuring only you can decrypt your information.";
 "about.anonymous_logging.title" = "Complete Privacy Guarantee";
-"about.anonymous_logging.description" = "SeedLock operates 100% offline and never transmits your data over the internet. We do not collect, log, track, or analyze any user data including mnemonic phrases, passwords, biometric data, usage patterns, or personal information. Your privacy is absolute.";
+"about.anonymous_logging.description" = "SeedLock operates offline by default. When iCloud sync is enabled, only encrypted data is transmitted via Apple CloudKit. We do not collect, log, track, or analyze any user data including mnemonic phrases, passwords, biometric data, usage patterns, or personal information. Your privacy is absolute.";
 "about.legal_licenses" = "Legal & Licenses";
 "about.terms_of_service" = "Terms of Service";
 "about.privacy_policy" = "Privacy Policy";
@@ -272,7 +272,7 @@
 
 /* Privacy Policy */
 "privacy.title" = "Privacy Policy";
-"privacy.last_updated" = "Last Updated: October 25, 2025";
+"privacy.last_updated" = "Last Updated: November 4, 2025";
 "privacy.intro" = "Your privacy is critically important to us. This policy explains how SeedLock handles your data with industry-leading encryption and zero-knowledge architecture.";
 
 "privacy.section1.title" = "Zero-Knowledge Architecture";
@@ -298,10 +298,10 @@
 
 /* Terms of Service */
 "terms.title" = "Terms of Service";
-"terms.last_updated" = "Last Updated: October 25, 2025";
+"terms.last_updated" = "Last Updated: November 4, 2025";
 "terms.intro" = "Please read these Terms of Service carefully before using SeedLock.";
 "terms.warning.title" = "⚠️ Important Warning";
-"terms.warning.message" = "This app uses AES-256 encryption to protect your cryptocurrency mnemonic phrases. However, due to circumstances beyond our control—including but not limited to device hardware failure, physical theft, security breaches, vulnerabilities in Apple's iOS system, unauthorized access, user error, or force majeure events—your mnemonic phrases may be lost, stolen, or compromised. Such losses can result in permanent and irreversible loss of funds. We are not responsible for any losses under any circumstances. Always maintain secure offline backups of your mnemonic phrases.";
+"terms.warning.message" = "This app uses AES-256 encryption to protect your cryptocurrency mnemonic phrases. However, due to circumstances beyond our control—including but not limited to device hardware failure, physical theft, security breaches, vulnerabilities in Apple's iOS system, Apple iCloud/CloudKit service interruptions or data loss, Apple account compromise, unauthorized access, user error, or force majeure events—your mnemonic phrases may be lost, stolen, or compromised. Such losses can result in permanent and irreversible loss of funds. We are not responsible for any losses under any circumstances. Always maintain secure offline backups of your mnemonic phrases.";
 "terms.agreement.title" = "You Agreed to These Terms";
 "terms.agreement.message" = "By using SeedLock, you acknowledge that you have read and agree to these Terms of Service.";
 
@@ -309,7 +309,7 @@
 "terms.section1.content" = "By downloading, installing, or using Seedlock (\"the App\"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.";
 
 "terms.section2.title" = "Description of Service";
-"terms.section2.content" = "Seedlock is a secure mnemonic phrase management application that allows you to:\n\n• Store and manage cryptocurrency mnemonic phrases\n• Generate BIP-39 compliant mnemonic phrases\n• Encrypt data locally on your device\n• Optionally sync encrypted data via iCloud\n• Create secure backups of your data\n\nThe App operates entirely offline and does not transmit your mnemonic phrases to any external servers.";
+"terms.section2.content" = "Seedlock is a secure mnemonic phrase management application that allows you to:\n\n• Store and manage cryptocurrency mnemonic phrases\n• Generate BIP-39 compliant mnemonic phrases\n• Encrypt data locally on your device\n• Optionally sync encrypted data via iCloud\n• Create secure backups of your data\n\nThe App operates offline by default. When iCloud sync is enabled, only encrypted data is transmitted via Apple CloudKit. Your mnemonic phrases are encrypted before leaving your device, and we have no access to your data.";
 
 "terms.section3.title" = "User Responsibilities";
 "terms.section3.content" = "You are solely responsible for:\n\n• Maintaining the security of your device\n• Safeguarding your mnemonic phrases\n• Creating and maintaining secure backups\n• Remembering your backup passwords\n• Any actions taken using the App\n\nWe strongly recommend keeping physical backups of your mnemonic phrases in a secure location.";
@@ -323,23 +323,20 @@
 "terms.section6.title" = "Data Storage and Backup";
 "terms.section6.content" = "Local Storage:\n• All data is encrypted using AES-256-GCM encryption\n• Encryption keys are stored in iOS Keychain\n• Data remains on your device unless you enable iCloud sync\n\nOptional iCloud Sync:\n• Encrypted data may be synced via CloudKit\n• Apple's iCloud terms and privacy policy apply\n• Data remains encrypted in transit and at rest\n• You can disable sync at any time";
 
+"terms.section6a.title" = "Third-Party Service Dependencies and Risks";
+"terms.section6a.content" = "This App relies on services provided by Apple. We are not responsible for:\n\nApple Services:\n• iCloud, CloudKit, or iCloud Keychain service interruptions, failures, or termination\n• Data loss, corruption, or inaccessibility in Apple services\n• Apple account theft, lockout, or termination\n• Service limitations due to Apple policy changes\n• Incompatibility or data loss due to Apple system updates\n\nTechnical Limitations:\n• iOS system vulnerabilities or security flaws\n• Potential future risks of encryption algorithm compromise\n• Biometric authentication bypass or failure\n• Device hardware failure or damage\n\nYou expressly understand and agree that using third-party services carries inherent risks, and we cannot control or guarantee the availability, security, or reliability of these services.";
+
 "terms.section7.title" = "No Warranty";
 "terms.section7.content" = "THE APP IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND:\n\n• No guarantees about app availability\n• No responsibility for data loss\n• No guarantee of complete security\n• The app may contain bugs or errors\n\nUse of this app is at your own risk. We recommend maintaining multiple backups of critical data.";
 
 "terms.section8.title" = "Limitation of Liability";
 "terms.section8.content" = "To the maximum extent permitted by law, we are not liable for any losses or damages, including but not limited to:\n\nFinancial Losses:\n• Loss of cryptocurrency funds due to lost mnemonic phrases\n• Theft of cryptocurrency funds\n• Market losses or trading decisions\n\nData Losses:\n• Lost, corrupted, or inaccessible data\n• Failed backups or sync operations\n• Device failure or malfunction\n\nIndirect Damages:\n• Loss of business or profits\n• Emotional distress\n• Consequential or punitive damages";
 
-"terms.section9.title" = "Updates and Changes";
-"terms.section9.content" = "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting in the App. Your continued use of the App after changes constitutes acceptance of the updated terms.";
+"terms.section9.title" = "Prohibited Uses";
+"terms.section9.content" = "You agree not to:\n\n• Use the App for any illegal purposes\n• Attempt to reverse engineer the App\n• Circumvent any security features\n• Use the App to store illegal content\n• Violate any applicable laws or regulations";
 
-"terms.section10.title" = "Governing Law";
-"terms.section10.content" = "These Terms of Service are governed by the laws of your jurisdiction. Any disputes shall be resolved in accordance with applicable law.";
-
-"terms.section9_alt.title" = "Prohibited Uses";
-"terms.section9_alt.content" = "You agree not to:\n\n• Use the App for any illegal purposes\n• Attempt to reverse engineer the App\n• Circumvent any security features\n• Use the App to store illegal content\n• Violate any applicable laws or regulations";
-
-"terms.section10_alt.title" = "Open Source Components";
-"terms.section10_alt.content" = "This App uses open source software components. Each component is governed by its own license terms. You can view all open source licenses in the \"Open Source Licenses\" section of the app.";
+"terms.section10.title" = "Open Source Components";
+"terms.section10.content" = "This App uses open source software components. Each component is governed by its own license terms. You can view all open source licenses in the \"Open Source Licenses\" section of the app.";
 
 "terms.section11.title" = "Changes to Terms";
 "terms.section11.content" = "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting within the App. Your continued use of the App after changes constitutes acceptance of the modified terms.";
@@ -347,8 +344,8 @@
 "terms.section12.title" = "Termination";
 "terms.section12.content" = "You may stop using the App at any time by deleting it from your device. We reserve the right to discontinue the App or any features at any time without notice.\n\nUpon termination, all data stored locally will remain on your device until you delete the App or manually delete the data.";
 
-"terms.section13.title" = "Governing Law";
-"terms.section13.content" = "These Terms of Service shall be governed by and construed in accordance with applicable local laws. Any disputes arising from these terms shall be resolved in accordance with local jurisdiction.";
+"terms.section13.title" = "Governing Law and Jurisdiction";
+"terms.section13.content" = "These Terms of Service shall be governed by and construed in accordance with applicable local laws. Any disputes arising from these terms shall be resolved in accordance with local jurisdiction.\n\nIMPORTANT NOTE: As this App serves users globally, the specific applicable law depends on your jurisdiction. If the laws of your jurisdiction conflict with these terms, the mandatory legal provisions of your jurisdiction shall prevail.";
 
 "terms.section14.title" = "Contact Information";
 "terms.section14.content" = "If you have any questions about these Terms of Service, please contact us through the \"Send Feedback\" option in the app settings.";
@@ -472,7 +469,6 @@
 "whitepaper.guarantees.item1" = "Your mnemonic phrases remain private at all times";
 "whitepaper.guarantees.item2" = "Your data is encrypted before leaving your device";
 "whitepaper.guarantees.item3" = "Decryption keys are protected by Apple's end-to-end encryption";
-"whitepaper.guarantees.item4" = "Even if our servers were compromised, your data remains secure";
 
 /* Verification */
 "whitepaper.verification.title" = "How You Can Verify";
@@ -525,7 +521,6 @@
 "security_demo.step4.guarantee1" = "Your phrases remain private at all times";
 "security_demo.step4.guarantee2" = "Data is encrypted before leaving your device";
 "security_demo.step4.guarantee3" = "Keys are in Apple's protected Keychain";
-"security_demo.step4.guarantee4" = "Even if our servers were hacked, your data stays safe";
 "security_demo.step4.cta" = "Now you understand how Seedlock keeps your recovery phrases secure!";
 "security_demo.step4.start_using" = "Start Using Seedlock";
 

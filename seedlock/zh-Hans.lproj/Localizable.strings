@@ -192,8 +192,8 @@
 "onboarding.welcome.subtitle" = "专业级安全保护\n您的加密货币助记词短语。";
 "onboarding.security.title" = "您的安全，您做主";
 "onboarding.security.subtitle" = "SeedLock 采用企业级安全技术和零知识架构保护您的加密密钥。";
-"onboarding.security.offline.title" = "100% 离线存储";
-"onboarding.security.offline.description" = "您的密钥永不离开设备。所有加密和存储都在本地进行，确保完全的气隙安全。";
+"onboarding.security.offline.title" = "默认离线存储";
+"onboarding.security.offline.description" = "默认情况下，您的数据完全保留在设备本地。所有加密和存储都在本地进行，确保完全的气隙安全。";
 "onboarding.security.encryption.title" = "军事级加密技术";
 "onboarding.security.encryption.description" = "AES-256-GCM 加密算法保护每个助记词短语，采用政府机构使用的同等标准。";
 "onboarding.security.biometric.title" = "生物识别保护";
@@ -275,11 +275,11 @@
 /* About */
 "about.title" = "关于与隐私";
 "about.zero_knowledge.title" = "零知识架构";
-"about.zero_knowledge.description" = "SeedLock 采用零知识架构设计，确保您的秘密短语和加密密钥完全私密。所有数据完全保留在您的设备上，确保您的加密资产完全私密并处于您的独家掌控之中。";
+"about.zero_knowledge.description" = "SeedLock 采用零知识架构设计，确保您的秘密短语和加密密钥完全私密。我们无法访问您的秘密短语或加密密钥，所有数据在离开设备前都已加密，确保您的加密资产完全私密并处于您的独家掌控之中。";
 "about.secure_storage.title" = "军事级加密技术";
 "about.secure_storage.description" = "您的助记词短语使用 AES-256-GCM 加密算法保护，这是银行和政府机构使用的同等标准。所有数据在存储到 iOS 钥匙串（苹果最安全的存储系统）之前都会在本地加密。可选的 iCloud 备份使用端到端加密，确保只有您能够解密您的信息。";
 "about.anonymous_logging.title" = "完全隐私保证";
-"about.anonymous_logging.description" = "SeedLock 100% 离线运行，永不通过互联网传输您的数据。我们不收集、记录、跟踪或分析任何用户数据，包括助记词短语、密码、生物识别数据、使用模式或个人信息。您的隐私是绝对的。";
+"about.anonymous_logging.description" = "SeedLock 默认完全离线运行。启用 iCloud 同步时，仅加密数据通过 Apple CloudKit 传输。我们不收集、记录、跟踪或分析任何用户数据，包括助记词短语、密码、生物识别数据、使用模式或个人信息。您的隐私是绝对的。";
 "about.legal_licenses" = "法律与许可";
 "about.terms_of_service" = "服务条款";
 "about.privacy_policy" = "隐私政策";
@@ -344,7 +344,7 @@
 
 /* Privacy Policy */
 "privacy.title" = "隐私政策";
-"privacy.last_updated" = "最后更新：2025年10月25日";
+"privacy.last_updated" = "最后更新：2025年11月4日";
 "privacy.intro" = "您的隐私对我们至关重要。本政策解释了 SeedLock 如何通过行业领先的加密技术和零知识架构处理您的数据。";
 
 "privacy.section1.title" = "零知识架构";
@@ -370,10 +370,10 @@
 
 /* Terms of Service */
 "terms.title" = "服务条款";
-"terms.last_updated" = "最后更新：2025年10月25日";
+"terms.last_updated" = "最后更新：2025年11月4日";
 "terms.intro" = "使用 SeedLock 之前，请仔细阅读这些服务条款。";
 "terms.warning.title" = "⚠️ 重要警告";
-"terms.warning.message" = "本应用使用 AES-256 加密技术保护您的加密货币助记词短语。然而，由于超出我们控制范围的情况——包括但不限于设备硬件故障、物理盗窃、安全漏洞、Apple iOS 系统漏洞、未经授权的访问、用户操作失误或不可抗力事件——您的助记词短语可能会丢失、被盗或泄露。此类损失可能导致资金的永久且不可逆转的损失。我们在任何情况下均不对任何损失承担责任。请务必保持助记词短语的安全离线备份。";
+"terms.warning.message" = "本应用使用 AES-256 加密技术保护您的加密货币助记词短语。然而，由于超出我们控制范围的情况——包括但不限于设备硬件故障、物理盗窃、安全漏洞、Apple iOS 系统漏洞、Apple iCloud/CloudKit 服务中断或数据丢失、Apple 账户被盗、未经授权的访问、用户操作失误或不可抗力事件——您的助记词短语可能会丢失、被盗或泄露。此类损失可能导致资金的永久且不可逆转的损失。我们在任何情况下均不对任何损失承担责任。请务必保持助记词短语的安全离线备份。";
 "terms.agreement.title" = "您已同意这些条款";
 "terms.agreement.message" = "使用 SeedLock，即表示您确认已阅读并同意这些服务条款。";
 
@@ -381,7 +381,7 @@
 "terms.section1.content" = "通过下载、安装或使用 Seedlock（本应用），您同意受这些服务条款的约束。如果您不同意这些条款，请不要使用本应用。";
 
 "terms.section2.title" = "服务描述";
-"terms.section2.content" = "Seedlock 是一个安全的助记词短语管理应用，允许您：\n\n• 存储和管理加密货币助记词短语\n• 生成符合 BIP-39 标准的助记词短语\n• 在设备上本地加密数据\n• 可选择通过 iCloud 同步加密数据\n• 创建数据的安全备份\n\n本应用完全离线运行，不会将您的助记词短语传输到任何外部服务器。";
+"terms.section2.content" = "Seedlock 是一个安全的助记词短语管理应用，允许您：\n\n• 存储和管理加密货币助记词短语\n• 生成符合 BIP-39 标准的助记词短语\n• 在设备上本地加密数据\n• 可选择通过 iCloud 同步加密数据\n• 创建数据的安全备份\n\n本应用默认离线运行。启用 iCloud 同步时，仅加密数据通过 Apple CloudKit 传输。您的助记词短语在离开设备前已加密，我们无法访问您的数据。";
 
 "terms.section3.title" = "用户责任";
 "terms.section3.content" = "您需要对以下内容负全部责任：\n\n• 维护设备的安全性\n• 保护您的助记词短语\n• 创建和维护安全备份\n• 记住您的备份密码\n• 使用本应用进行的任何操作\n\n我们强烈建议在安全位置保留助记词短语的物理备份。";
@@ -395,23 +395,20 @@
 "terms.section6.title" = "数据存储和备份";
 "terms.section6.content" = "本地存储：\n• 所有数据使用 AES-256-GCM 加密算法加密\n• 加密密钥存储在 iOS 钥匙串中\n• 数据保留在您的设备上，除非您启用 iCloud 同步\n\n可选的 iCloud 同步：\n• 加密数据可能通过 CloudKit 同步\n• Apple 的 iCloud 条款和隐私政策适用\n• 数据在传输和静态时保持加密\n• 您可以随时禁用同步";
 
+"terms.section6a.title" = "第三方服务依赖与风险";
+"terms.section6a.content" = "本应用依赖于 Apple 提供的服务，我们对以下情况不承担任何责任：\n\nApple 服务相关：\n• iCloud、CloudKit 或 iCloud 钥匙串服务中断、故障或终止\n• Apple 服务的数据丢失、损坏或不可访问\n• Apple 账户被盗、锁定或终止\n• Apple 政策变更导致的服务功能受限\n• Apple 系统更新导致的不兼容或数据丢失\n\n技术限制：\n• iOS 系统漏洞或安全缺陷\n• 加密算法未来可能存在的破解风险\n• 生物识别认证被绕过或失效\n• 设备硬件故障或损坏\n\n您明确理解并同意，使用第三方服务存在固有风险，我们无法控制或保证这些服务的可用性、安全性或可靠性。";
+
 "terms.section7.title" = "无保证声明";
 "terms.section7.content" = "本应用按原样提供，不提供任何形式的保证：\n\n• 不保证应用的可用性\n• 不对数据丢失负责\n• 无法保证完全的安全性\n• 应用可能包含错误或漏洞\n\n使用本应用的风险由您自行承担。我们建议对关键数据保持多个备份。";
 
 "terms.section8.title" = "责任限制";
 "terms.section8.content" = "在法律允许的最大范围内，我们不对任何损失或损害负责，包括但不限于：\n\n财务损失：\n• 因丢失助记词短语而损失的加密货币资金\n• 加密货币资金被盗\n• 市场损失或交易决策\n\n数据损失：\n• 丢失、损坏或无法访问的数据\n• 备份或同步操作失败\n• 设备故障或损坏\n\n间接损害：\n• 业务或利润损失\n• 精神痛苦\n• 后果性或惩罚性损害";
 
-"terms.section9.title" = "更新和变更";
-"terms.section9.content" = "我们保留随时修改这些服务条款的权利。变更将在应用中发布后立即生效。变更后继续使用本应用即表示接受更新的条款。";
+"terms.section9.title" = "禁止用途";
+"terms.section9.content" = "您同意不：\n\n• 将本应用用于任何非法目的\n• 尝试对本应用进行反向工程\n• 规避任何安全功能\n• 使用本应用存储非法内容\n• 违反任何适用的法律或法规";
 
-"terms.section10.title" = "适用法律";
-"terms.section10.content" = "这些服务条款受您所在司法管辖区的法律管辖。任何争议应根据适用法律解决。";
-
-"terms.section9_alt.title" = "禁止用途";
-"terms.section9_alt.content" = "您同意不：\n\n• 将本应用用于任何非法目的\n• 尝试对本应用进行反向工程\n• 规避任何安全功能\n• 使用本应用存储非法内容\n• 违反任何适用的法律或法规";
-
-"terms.section10_alt.title" = "开源组件";
-"terms.section10_alt.content" = "本应用使用开源软件组件。每个组件都受其自身许可条款的约束。您可以在应用的开源许可部分查看所有开源许可证。";
+"terms.section10.title" = "开源组件";
+"terms.section10.content" = "本应用使用开源软件组件。每个组件都受其自身许可条款的约束。您可以在应用的开源许可部分查看所有开源许可证。";
 
 "terms.section11.title" = "条款变更";
 "terms.section11.content" = "我们保留随时修改这些服务条款的权利。变更将在应用内发布后立即生效。变更后继续使用本应用即表示接受修改后的条款。";
@@ -419,8 +416,8 @@
 "terms.section12.title" = "终止";
 "terms.section12.content" = "您可以随时通过从设备中删除本应用来停止使用。我们保留随时停止本应用或任何功能而不另行通知的权利。\n\n终止后，本地存储的所有数据将保留在您的设备上，直到您删除本应用或手动删除数据。";
 
-"terms.section13.title" = "适用法律";
-"terms.section13.content" = "这些服务条款应根据适用的当地法律进行管辖和解释。因这些条款引起的任何争议应根据当地管辖权解决。";
+"terms.section13.title" = "适用法律和管辖权";
+"terms.section13.content" = "这些服务条款应根据适用的当地法律进行管辖和解释。因这些条款引起的任何争议应根据当地管辖权解决。\n\n重要提示：由于本应用面向全球用户，具体适用法律取决于您所在的司法管辖区。如果您所在地区的法律与这些条款存在冲突，以您所在地区的强制性法律规定为准。";
 
 "terms.section14.title" = "联系信息";
 "terms.section14.content" = "如果您对这些服务条款有任何疑问，请通过应用设置中的发送反馈选项与我们联系。";
@@ -512,7 +509,6 @@
 "whitepaper.guarantees.item1" = "您的助记词始终保持私密";
 "whitepaper.guarantees.item2" = "您的数据在离开设备前已加密";
 "whitepaper.guarantees.item3" = "解密密钥受 Apple 端到端加密保护";
-"whitepaper.guarantees.item4" = "即使我们的服务器被攻破，您的数据仍然安全";
 
 /* Verification */
 "whitepaper.verification.title" = "如何验证";
@@ -565,7 +561,6 @@
 "security_demo.step4.guarantee1" = "您的助记词始终保持私密";
 "security_demo.step4.guarantee2" = "数据在离开设备前已加密";
 "security_demo.step4.guarantee3" = "密钥在 Apple 的受保护钥匙串中";
-"security_demo.step4.guarantee4" = "即使我们的服务器被攻破，您的数据也是安全的";
 "security_demo.step4.cta" = "现在您了解了 Seedlock 如何保护您的助记词安全！";
 "security_demo.step4.start_using" = "开始使用 Seedlock";
 

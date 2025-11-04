@@ -367,12 +367,6 @@ struct SecurityDemoView: View {
                     text: "security_demo.step4.guarantee3".localized,
                     color: .purple
                 )
-                
-                GuaranteeRow(
-                    icon: "server.rack",
-                    text: "security_demo.step4.guarantee4".localized,
-                    color: .orange
-                )
             }
             
             // Call to action

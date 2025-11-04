@@ -323,12 +323,6 @@ struct SecurityWhitepaperView: View {
                     color: .purple,
                     text: "whitepaper.guarantees.item3".localized
                 )
-                
-                GuaranteeCard(
-                    icon: "key.viewfinder",
-                    color: .orange,
-                    text: "whitepaper.guarantees.item4".localized
-                )
             }
         }
     }
