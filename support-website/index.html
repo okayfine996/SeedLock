@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seedlock Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid white;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #666;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning strong {
+            color: #856404;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #e01e5a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔐</div>
+            <h1>Seedlock Support</h1>
+            <p class="tagline">Secure Crypto Seed Management</p>
+        </header>
+
+        <div class="content">
+            <h2>📧 Contact Us</h2>
+            <div class="contact-box">
+                <p style="margin-bottom: 15px;">Need help? We're here for you!</p>
+                <a href="mailto:litesky@foxmail.com">litesky@foxmail.com</a>
+                <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">Response time: Within 24 hours</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">🔒 Is my data safe?</div>
+                <div class="faq-answer">
+                    <p>Yes. Seedlock uses <strong>military-grade AES-256-GCM encryption</strong> and a <strong>zero-knowledge architecture</strong>. This means:</p>
+                    <ul>
+                        <li>Your data is encrypted on your device before syncing</li>
+                        <li>We never have access to your encryption keys</li>
+                        <li>Even we cannot read your recovery phrases</li>
+                        <li>Only you can decrypt your data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🔑 What if I forget my password?</div>
+                <div class="faq-answer">
+                    <p>Seedlock uses your device's biometric authentication (Face ID/Touch ID), so you don't need to remember a password. However:</p>
+                    <ul>
+                        <li>Make sure biometric authentication is set up on your device</li>
+                        <li>Keep regular backups of your data</li>
+                        <li>If you lose access to your device, restore from iCloud backup on a new device</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">☁️ Does Seedlock store my data on servers?</div>
+                <div class="faq-answer">
+                    <p><strong>Only if you enable iCloud Sync</strong>. When enabled:</p>
+                    <ul>
+                        <li>Data is encrypted on your device BEFORE syncing</li>
+                        <li>We only store encrypted data - we cannot read it</li>
+                        <li>Your encryption keys never leave your device</li>
+                        <li>Data is stored in your personal iCloud account</li>
+                    </ul>
+                    <p>If you don't enable iCloud Sync, all data stays only on your device.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🔄 Can I use Seedlock on multiple devices?</div>
+                <div class="faq-answer">
+                    <p>Yes! Enable <strong>iCloud Sync</strong> in Settings to access your vault on all your Apple devices:</p>
+                    <ul>
+                        <li>iPhone</li>
+                        <li>iPad</li>
+                        <li>Mac (if supported)</li>
+                    </ul>
+                    <p>All data is end-to-end encrypted during sync.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">💾 How do I backup my data?</div>
+                <div class="faq-answer">
+                    <p>Seedlock offers two backup methods:</p>
+                    <ol>
+                        <li><strong>iCloud Sync (Recommended)</strong>
+                            <ul>
+                                <li>Go to Settings → Enable iCloud Sync</li>
+                                <li>Automatic encrypted backups</li>
+                                <li>Restore on any device</li>
+                            </ul>
+                        </li>
+                        <li><strong>Manual Export</strong>
+                            <ul>
+                                <li>Open any seed → Tap export icon</li>
+                                <li>Copy or save to secure location</li>
+                                <li>Store in a safe place offline</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🔐 Can Seedlock recover my lost seeds?</div>
+                <div class="faq-answer">
+                    <div class="warning">
+                        <strong>⚠️ No, we cannot.</strong>
+                        <p>This is by design. Zero-knowledge encryption means we have no way to access your data. You are solely responsible for:</p>
+                        <ul>
+                            <li>Maintaining your own backups</li>
+                            <li>Keeping your device secure</li>
+                            <li>Remembering your authentication method</li>
+                        </ul>
+                        <p><strong>Lost data cannot be recovered by anyone, including Seedlock.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🏢 Is Seedlock affiliated with any crypto project?</div>
+                <div class="faq-answer">
+                    <p><strong>No.</strong> Seedlock is an independent security tool and is not affiliated with, endorsed by, or connected to any:</p>
+                    <ul>
+                        <li>Cryptocurrency project</li>
+                        <li>Blockchain network</li>
+                        <li>Wallet provider</li>
+                        <li>Exchange</li>
+                    </ul>
+                    <p>We are a neutral security tool that works with any crypto wallet.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">📱 What iOS version is required?</div>
+                <div class="faq-answer">
+                    <p>Seedlock requires <strong>iOS 17.0 or later</strong>.</p>
+                    <p>Compatible with:</p>
+                    <ul>
+                        <li>iPhone XS and newer</li>
+                        <li>iPad Pro (3rd generation) and newer</li>
+                        <li>iPad Air (3rd generation) and newer</li>
+                        <li>iPad mini (5th generation) and newer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">💰 Is Seedlock free?</div>
+                <div class="faq-answer">
+                    <p><strong>Yes, during early access!</strong> All features are currently free while we gather feedback and improve the app.</p>
+                    <p>Future plans may include premium features, but core security features will always remain accessible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🐛 I found a bug. How do I report it?</div>
+                <div class="faq-answer">
+                    <p>Thank you for helping us improve! Please email us at:</p>
+                    <p><strong><a href="mailto:litesky@foxmail.com">litesky@foxmail.com</a></strong></p>
+                    <p>Include:</p>
+                    <ul>
+                        <li>iOS version</li>
+                        <li>Device model</li>
+                        <li>Steps to reproduce the bug</li>
+                        <li>Screenshots (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>⚠️ Important Disclaimers</h2>
+            
+            <div class="warning">
+                <h3>Security Responsibility</h3>
+                <p><strong>You are responsible for:</strong></p>
+                <ul>
+                    <li>Keeping your device physically secure</li>
+                    <li>Maintaining regular backups</li>
+                    <li>Verifying your recovery phrases are correct</li>
+                    <li>Understanding cryptocurrency security risks</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h3>No Liability for Loss</h3>
+                <p>Seedlock is a tool for managing sensitive data. We are not liable for:</p>
+                <ul>
+                    <li>Lost, stolen, or compromised cryptocurrency assets</li>
+                    <li>Data loss due to device failure or user error</li>
+                    <li>Consequences of incorrect recovery phrase storage</li>
+                    <li>Third-party service failures (including iCloud)</li>
+                </ul>
+                <p><strong>Use at your own risk. Cryptocurrency involves significant financial risk.</strong></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>📚 Additional Resources</h2>
+            
+            <div class="links">
+                <a href="privacy.html" class="button">Privacy Policy</a>
+                <a href="terms.html" class="button">Terms of Service</a>
+                <a href="https://apps.apple.com/app/seedlock" class="button">Download on App Store</a>
+            </div>
+
+            <div class="highlight">
+                <h3>🔐 Security Best Practices</h3>
+                <ol>
+                    <li><strong>Enable Face ID/Touch ID</strong> for quick access</li>
+                    <li><strong>Turn on iCloud Sync</strong> for automatic encrypted backups</li>
+                    <li><strong>Verify recovery phrases</strong> when importing wallets</li>
+                    <li><strong>Keep your iOS updated</strong> for latest security patches</li>
+                    <li><strong>Never share screenshots</strong> of your recovery phrases</li>
+                    <li><strong>Test recovery</strong> with small amounts first</li>
+                </ol>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Seedlock. All rights reserved.</p>
+            <p>Seedlock is an independent security tool, not affiliated with any cryptocurrency or blockchain project.</p>
+            <p style="margin-top: 20px;">
+                <a href="mailto:litesky@foxmail.com" style="color: #667eea; text-decoration: none;">Contact Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+

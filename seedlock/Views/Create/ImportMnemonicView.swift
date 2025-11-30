@@ -9,6 +9,12 @@ import SwiftUI
 import SwiftData
 import PhotosUI
 
+/// Item for passing words to review view
+struct ReviewItem: Identifiable {
+    let id = UUID()
+    let words: [String]
+}
+
 struct ImportMnemonicView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
@@ -31,6 +37,14 @@ struct ImportMnemonicView: View {
     // Autocomplete states
     @State private var wordSuggestions: [String] = []
     @State private var showSuggestions = false
+    
+    // Review states
+    @State private var showReviewView = false
+    @State private var wordsToReview: [String] = []
+    @State private var reviewItem: ReviewItem?
+    
+    // Flag to prevent onChange from cleaning when setting from camera/OCR
+    @State private var isSettingFromExternalSource = false
     
     private var wordCount: Int {
         phrase.split(separator: " ").count
@@ -105,7 +119,10 @@ struct ImportMnemonicView: View {
                                     .padding(Theme.spacing12)
                                     .scrollContentBackground(.hidden)
                                     .onChange(of: phrase) { _, newValue in
-                                        phrase = BIP39Service.shared.cleanMnemonic(newValue)
+                                        // Only clean if user is typing, not when setting from camera/OCR
+                                        if !isSettingFromExternalSource {
+                                            phrase = BIP39Service.shared.cleanMnemonic(newValue)
+                                        }
                                         updateWordSuggestions()
                                     }
                                 
@@ -357,7 +374,27 @@ struct ImportMnemonicView: View {
             TagPickerView(selectedTags: $selectedTags)
         }
         .fullScreenCover(isPresented: $showCameraScanner) {
-            CameraScannerView(recognizedText: $phrase)
+            CameraScannerView(recognizedText: Binding(
+                get: { phrase },
+                set: { newValue in
+                    // When camera scanner returns text, directly set phrase
+                    isSettingFromExternalSource = true
+                    let cleanedText = BIP39Service.shared.cleanMnemonic(newValue)
+                    phrase = cleanedText
+                    // Reset flag after a short delay
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        isSettingFromExternalSource = false
+                    }
+                }
+            ))
+        }
+        .sheet(item: $reviewItem) { item in
+            MnemonicReviewView(words: item.words) { confirmedWords in
+                // When confirmed in review view, update phrase and save
+                phrase = confirmedWords.joined(separator: " ")
+                // Save after review confirmation
+                performSave()
+            }
         }
         .alert("common.error".localized, isPresented: $showError) {
             Button("common.ok".localized) {}
@@ -370,7 +407,13 @@ struct ImportMnemonicView: View {
     
     private func pasteFromClipboard() {
         if let clipboardText = UIPasteboard.general.string {
-            phrase = clipboardText
+            isSettingFromExternalSource = true
+            let cleanedText = BIP39Service.shared.cleanMnemonic(clipboardText)
+            phrase = cleanedText
+            // Reset flag after a short delay to allow onChange to work normally
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                isSettingFromExternalSource = false
+            }
         }
     }
     
@@ -394,14 +437,16 @@ struct ImportMnemonicView: View {
             
             // Update UI on main thread
             await MainActor.run {
+                // Directly set phrase from OCR result
+                isSettingFromExternalSource = true
                 phrase = recognizedPhrase
+                // Reset flag after a short delay
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    isSettingFromExternalSource = false
+                }
                 
                 // Log event
                 DiagnosticsLogger.shared.logEvent(.success, title: "OCR Recognition Successful")
-                
-                // Show success feedback (optional)
-                let wordCount = recognizedPhrase.split(separator: " ").count
-                print("📷 OCR识别成功: \(wordCount) 个单词")
             }
             
         } catch {
@@ -421,6 +466,24 @@ struct ImportMnemonicView: View {
     }
     
     private func saveMnemonic() {
+        // Extract words from phrase and show review view
+        let cleanedPhrase = BIP39Service.shared.cleanMnemonic(phrase)
+        let words = cleanedPhrase.split(separator: " ").map(String.init).filter { !$0.isEmpty }
+        
+        if !words.isEmpty {
+            // Show review view before saving
+            wordsToReview = words
+            // Create review item with words and show sheet
+            reviewItem = ReviewItem(words: words)
+        } else {
+            // If no words, show error
+            errorMessage = "import.error.invalid_phrase".localized
+            showError = true
+        }
+    }
+    
+    /// Performs the actual save operation after review confirmation
+    private func performSave() {
         Task {
             do {
                 _ = try await viewModel.createMnemonic(

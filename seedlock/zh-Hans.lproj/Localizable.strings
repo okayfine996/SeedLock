@@ -100,6 +100,11 @@
 "import.save_button" = "保存";
 "import.success.title" = "助记词已导入";
 "import.success.message" = "您的助记词已加密并安全存储。";
+"import.review.title" = "审查助记词";
+"import.review.description" = "如有需要，请审查并调整单词顺序。拖拽即可重新排序。";
+"import.review.confirm" = "确认";
+"import.review.cancel" = "取消";
+"import.review.drag_hint" = "拖拽以重新排序单词";
 
 /* Detail View */
 "detail.created" = "创建时间：";

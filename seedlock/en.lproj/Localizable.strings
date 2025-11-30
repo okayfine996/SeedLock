@@ -100,6 +100,11 @@
 "import.save_button" = "Save";
 "import.success.title" = "Mnemonic Imported";
 "import.success.message" = "Your mnemonic has been encrypted and securely stored.";
+"import.review.title" = "Review Mnemonic";
+"import.review.description" = "Review and adjust the order of words if needed. Drag to reorder.";
+"import.review.confirm" = "Confirm";
+"import.review.cancel" = "Cancel";
+"import.review.drag_hint" = "Drag to reorder words";
 
 /* Detail View */
 "detail.created" = "Created:";

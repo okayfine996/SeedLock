@@ -23,7 +23,6 @@ struct HomeView: View {
     @State private var showCreateSheet = false
     @State private var showImportSheet = false
     @State private var navigateToSettings = false
-    @State private var showActionSheet = false
     @State private var selectedMnemonic: Mnemonic?
     @State private var showDeleteConfirmation = false
     @State private var mnemonicToDelete: Mnemonic?
@@ -235,15 +234,6 @@ struct HomeView: View {
         .sheet(isPresented: $showImportSheet) {
             ImportMnemonicView()
         }
-        .confirmationDialog("home.add_mnemonic".localized, isPresented: $showActionSheet) {
-            Button("home.create_new".localized) {
-                showCreateSheet = true
-            }
-            Button("home.import_existing".localized) {
-                showImportSheet = true
-            }
-            Button("common.cancel".localized, role: .cancel) {}
-        }
         .navigationDestination(isPresented: $navigateToSettings) {
             SettingsView()
         }
@@ -284,9 +274,19 @@ struct HomeView: View {
             
             Spacer()
             
-            Button(action: {
-                showActionSheet = true
-            }) {
+            Menu {
+                Button {
+                    showCreateSheet = true
+                } label: {
+                    Label("home.create_new".localized, systemImage: "plus.circle")
+                }
+                
+                Button {
+                    showImportSheet = true
+                } label: {
+                    Label("home.import_existing".localized, systemImage: "square.and.arrow.down")
+                }
+            } label: {
                 ZStack {
                     Circle()
                         .fill(Color.appPrimary)
